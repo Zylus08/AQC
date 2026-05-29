@@ -1,0 +1,92 @@
+# ===========================================================================
+#  AQC — AlgoQuant Club Backtest Configuration
+#  File: configs/config.yaml
+# ===========================================================================
+
+# ---------------------------------------------------------------------------
+# Backtest universe and time range
+# ---------------------------------------------------------------------------
+backtest:
+  symbols:
+    - AAPL
+  start_date: "2020-01-01"
+  end_date: "2024-12-31"
+  initial_capital: 100000.0
+
+# ---------------------------------------------------------------------------
+# Data layer
+# ---------------------------------------------------------------------------
+data:
+  source: csv                     # csv | parquet | yfinance (future)
+  data_dir: data/raw
+  cache_dir: data/cache
+  use_cache: true
+  datetime_format: null           # null = auto-detect
+  timezone: null                  # null = timezone-naive (e.g. "UTC", "US/Eastern")
+  fill_method: ffill              # ffill | bfill | drop | null
+
+# ---------------------------------------------------------------------------
+# Strategy selection
+# ---------------------------------------------------------------------------
+strategy:
+  name: sma_crossover             # sma_crossover | rsi_mean_reversion | ema_momentum
+  params:
+    # SMA Crossover
+    fast_period: 20
+    slow_period: 50
+    # RSI Mean Reversion (used when name == rsi_mean_reversion)
+    rsi_period: 14
+    oversold: 30
+    overbought: 70
+    allow_short: false
+    # EMA Momentum (used when name == ema_momentum)
+    short_period: 9
+    medium_period: 21
+    long_period: 50
+
+# ---------------------------------------------------------------------------
+# Execution / broker
+# ---------------------------------------------------------------------------
+broker:
+  commission_model: percentage    # percentage | flat_fee | zero
+  commission_rate: 0.001          # 0.1% (used when model == percentage)
+  commission_flat_fee: 5.0        # $5 per trade (used when model == flat_fee)
+  slippage_model: fixed_bps       # fixed_bps | zero
+  slippage_bps: 5                 # 5 basis points
+  exchange: SIMULATED
+
+# ---------------------------------------------------------------------------
+# Portfolio
+# ---------------------------------------------------------------------------
+portfolio:
+  default_quantity: 100           # default order size (units)
+  currency: USD
+
+# ---------------------------------------------------------------------------
+# Risk management
+# ---------------------------------------------------------------------------
+risk:
+  max_position_size: .inf         # units; .inf = disabled
+  max_position_pct_equity: 0.20   # 20% of equity per position
+  max_gross_exposure_pct: 1.0     # 100% gross exposure (no leverage by default)
+  max_daily_loss_pct: 0.05        # halt trading after 5% daily drawdown
+  max_open_positions: 10
+
+# ---------------------------------------------------------------------------
+# Logging
+# ---------------------------------------------------------------------------
+logging:
+  level: INFO                     # DEBUG | INFO | WARNING | ERROR
+  log_dir: logs
+  log_to_file: true
+  log_filename: backtest.log
+  format: "%(asctime)s | %(levelname)-8s | %(name)s | %(message)s"
+
+# ---------------------------------------------------------------------------
+# Output / reporting
+# ---------------------------------------------------------------------------
+output:
+  reports_dir: reports
+  save_report: true
+  export_equity_curve: true
+  export_trade_log: true

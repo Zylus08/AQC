@@ -1,0 +1,36 @@
+
+=================================================================
+  AQC BACKTEST REPORT
+=================================================================
+
+  PORTFOLIO SUMMARY
+-----------------------------------------------------------------
+  Initial Capital    : $  100,000.00
+  Final Equity       : $   99,267.51
+  Total PnL          : $    -568.50
+  Realised PnL       : $    -136.52
+  Unrealised PnL     : $    -431.98
+  Total Commission   : $      163.99
+  Total Return       : -0.73%
+  Num Trades         : 11
+  Open Positions     : 1
+
+  PERFORMANCE METRICS
+-----------------------------------------------------------------
+  CAGR               : -0.37%
+  Sharpe Ratio       : -2.3455
+  Sortino Ratio      : -3.1054
+  Calmar Ratio       : -0.1742
+  Max Drawdown       : -2.1225%
+  Max Drawdown (abs) : $   -2,137.40
+  Ann. Volatility    : +1.86%
+  Win Rate           : +20.00%
+  Profit Factor      : +0.8895
+  Avg Trade Return   : $      -27.30
+  Avg Win            : $    1,098.53
+  Avg Loss           : $     -308.76
+  Total Return       : -0.73%
+  Exposure           : N/A
+  Wins / Losses      : 1 / 4
+
+=================================================================
