@@ -69,15 +69,26 @@ aqc/
 │   ├── execution.py              # ExecutionEngine facade
 │   └── engine.py                 # BacktestEngine (main event loop)
 │
-├── research/                       # Walk-Forward Optimisation (NEW)
+├── research/                       # Walk-Forward Optimisation
 │   ├── parameter_space.py        # IntParam, FloatParam, CategoricalParam, ParameterGrid
 │   ├── optimizer.py              # GridSearchOptimizer, RandomSearchOptimizer
 │   ├── walk_forward.py           # WalkForwardEngine (rolling/expanding windows)
 │   └── validation.py             # IS/OOS statistics, plots, reports
 │
+├── volatility/                     # Volatility Forecasting Framework (NEW)
+│   ├── ewma.py                   # EWMA variance/volatility (RiskMetrics)
+│   ├── garch.py                  # GARCH(1,1) with MLE fitting
+│   ├── forecasting_engine.py     # Multi-model ensemble + regime detection
+│   └── volatility_metrics.py     # Position sizing (vol-target, inverse-vol, risk-parity)
+│
 ├── strategies/
 │   ├── base_strategy.py          # Abstract BaseStrategy
-│   └── sample_strategy.py        # SMACrossover, RSIMeanReversion, EMAMomentum
+│   ├── sample_strategy.py        # SMACrossover, RSIMeanReversion, EMAMomentum
+│   └── intraday/                 # Intraday Mean Reversion Suite
+│       ├── vwap_reversion.py     # VWAP deviation z-score
+│       ├── volume_exhaustion.py  # Volume spike + failed breakout
+│       ├── zscore_reversion.py   # Adaptive vol-based z-score
+│       └── composite_mean_reversion.py  # Multi-signal alpha composite
 │
 ├── indicators/
 │   ├── moving_averages.py        # SMA, EMA, WMA, DEMA, HMA
@@ -251,6 +262,17 @@ class MyStrategy(BaseStrategy):
 | `CompositeMeanReversionStrategy` | Multi-signal alpha composite | `w_vwap`, `w_volume`, `w_zscore`, `composite_threshold` |
 
 See [docs/intraday_strategies.md](docs/intraday_strategies.md) for full details.
+
+### Volatility Forecasting Framework
+
+| Module | Description | Key Features |
+|--------|-------------|--------------|
+| `ewma_volatility` | EWMA (RiskMetrics) vol estimator | `decay=0.94`, variance/vol/forecast |
+| `GARCH11` | GARCH(1,1) with MLE fitting | Conditional variance, h-step forecast, half-life |
+| `VolatilityForecastEngine` | Multi-model ensemble | EWMA + GARCH + Historical, regime detection, CI |
+| `VolatilitySizer` | Vol-targeted position sizing | Vol-target, inverse-vol, risk-parity |
+
+See [docs/volatility_framework.md](docs/volatility_framework.md) for full details.
 
 ---
 
