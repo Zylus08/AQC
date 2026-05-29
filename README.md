@@ -233,11 +233,24 @@ class MyStrategy(BaseStrategy):
 
 ## Implemented Strategies
 
+### Core Strategies
+
 | Strategy | Description | Key Parameters |
 |----------|-------------|----------------|
 | `SMACrossoverStrategy` | Classic golden/death cross | `fast_period`, `slow_period` |
 | `RSIMeanReversionStrategy` | RSI oversold/overbought | `rsi_period`, `oversold`, `overbought`, `allow_short` |
 | `EMAMomentumStrategy` | EMA alignment with trend filter | `short_period`, `medium_period`, `long_period` |
+
+### Intraday Mean Reversion Suite
+
+| Strategy | Description | Key Parameters |
+|----------|-------------|----------------|
+| `VWAPReversionStrategy` | VWAP deviation z-score | `entry_threshold`, `exit_threshold`, `rolling_window` |
+| `VolumeExhaustionStrategy` | Volume spike + failed breakout | `spike_mult`, `breakout_window`, `wick_ratio` |
+| `ZScoreReversionStrategy` | Adaptive vol-based z-score | `z_window`, `base_entry_z`, `vol_adjustment` |
+| `CompositeMeanReversionStrategy` | Multi-signal alpha composite | `w_vwap`, `w_volume`, `w_zscore`, `composite_threshold` |
+
+See [docs/intraday_strategies.md](docs/intraday_strategies.md) for full details.
 
 ---
 

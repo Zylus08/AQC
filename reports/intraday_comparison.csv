@@ -1,0 +1,5 @@
+Strategy,Sharpe,Sortino,Return%,MaxDD%,Trades,WinRate%,PF,TotalPnL
+VWAP Reversion,0.4331,0.6378,15.9953,-53.5968,17,58.8,2.74,2522.28
+Volume Exhaustion,-0.0949,-0.1371,3.2402,-11.8672,1,100.0,inf,771.42
+Z-Score Adaptive,0.4228,0.6139,9.4677,-55.147,23,73.9,2.26,2460.59
+Composite Alpha,0.5597,0.8501,5.5294,-70.3656,32,56.2,2.8,2105.87
