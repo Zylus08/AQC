@@ -186,3 +186,1039 @@
 2026-05-29 12:19:37 | INFO     | aqc.analytics.reporting             | Equity curve exported to reports\equity_curve.csv
 2026-05-29 12:19:37 | INFO     | aqc.analytics.reporting             | Trade log exported to reports\trade_log.csv
 2026-05-29 12:19:37 | INFO     | aqc.main                            | Run complete — 500 bars in 1.065 s
+2026-05-29 17:56:53 | INFO     | aqc                                 | AQC logging initialised — level=INFO, file=logs/backtest.log
+2026-05-29 17:56:53 | INFO     | aqc.examples.wfo                    | =================================================================
+2026-05-29 17:56:53 | INFO     | aqc.examples.wfo                    | AQC Walk-Forward Optimisation Demo
+2026-05-29 17:56:53 | INFO     | aqc.examples.wfo                    | =================================================================
+2026-05-29 17:56:53 | INFO     | aqc.examples.wfo                    | Generated 600 bars of synthetic data
+2026-05-29 17:56:53 | INFO     | aqc.examples.wfo                    | Parameter space: 20 combinations
+2026-05-29 17:56:53 | INFO     | aqc.examples.wfo                    | Engine configured: WalkForwardEngine(mode=ROLLING, optimizer=grid, objective=sharpe_ratio, symbols=['AAPL'])
+2026-05-29 17:56:53 | INFO     | aqc.research.walk_forward           | =================================================================
+2026-05-29 17:56:53 | INFO     | aqc.research.walk_forward           | AQC Walk-Forward Optimisation
+2026-05-29 17:56:53 | INFO     | aqc.research.walk_forward           |   Mode      : ROLLING
+2026-05-29 17:56:53 | INFO     | aqc.research.walk_forward           |   Optimizer : GRID
+2026-05-29 17:56:53 | INFO     | aqc.research.walk_forward           |   Objective : sharpe_ratio
+2026-05-29 17:56:53 | INFO     | aqc.research.walk_forward           |   Folds     : 4
+2026-05-29 17:56:53 | INFO     | aqc.research.walk_forward           |   Symbols   : ['AAPL']
+2026-05-29 17:56:53 | INFO     | aqc.research.walk_forward           |   Grid size : 20
+2026-05-29 17:56:53 | INFO     | aqc.research.walk_forward           | =================================================================
+2026-05-29 17:56:53 | INFO     | aqc.research.walk_forward           | Fold 1/4  train=[2020-01-02, 2020-07-29]  test=[2020-07-30, 2020-11-11]
+2026-05-29 17:56:53 | INFO     | aqc.research.optimizer              | GridSearch starting: 20 combinations, objective=sharpe_ratio
+2026-05-29 17:56:53 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=0f419ee6-2cd4-4d86-bf30-93f04763e075)
+2026-05-29 17:56:53 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 163.9939  slippage=0.0820  commission=16.3994
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 163.9939  comm=16.3994  realised_pnl=0.00
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=2af33959-8f60-430c-8c25-b82bafe6aaf9)
+2026-05-29 17:56:53 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 155.9502  slippage=-0.0780  commission=15.5950
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 155.9502  comm=15.5950  realised_pnl=-804.37
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=b9a73961-01b1-4e0b-b650-f6f977b537a4)
+2026-05-29 17:56:53 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 149.0178  slippage=0.0745  commission=14.9018
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 149.0178  comm=14.9018  realised_pnl=0.00
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=02d17508-222d-4ec0-b39b-2760f11abcde)
+2026-05-29 17:56:53 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 140.7759  slippage=-0.0704  commission=14.0776
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 140.7759  comm=14.0776  realised_pnl=-824.19
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=736d7b39-bd96-4702-9fbf-ba82b75c7dfa)
+2026-05-29 17:56:53 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 149.5887  slippage=0.0748  commission=14.9589
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 149.5887  comm=14.9589  realised_pnl=0.00
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=dcc70755-be18-4019-8cdb-a37749ab7805)
+2026-05-29 17:56:53 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 139.6132  slippage=-0.0698  commission=13.9613
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 139.6132  comm=13.9613  realised_pnl=-997.55
+2026-05-29 17:56:53 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=da00acd2-0cfb-4b9b-9da6-894596f385c4)
+2026-05-29 17:56:53 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 145.1021  slippage=0.0725  commission=14.5102
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 145.1021  comm=14.5102  realised_pnl=0.00
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=b774297c-83ef-48ab-9c9d-d148fc623ebe)
+2026-05-29 17:56:53 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 139.3853  slippage=-0.0697  commission=13.9385
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 139.3853  comm=13.9385  realised_pnl=-571.69
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=b3fe9eb8-e9bf-4476-8ad8-308eefd3b51e)
+2026-05-29 17:56:53 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 149.5887  slippage=0.0748  commission=14.9589
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 149.5887  comm=14.9589  realised_pnl=0.00
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=9385cf50-7d21-444a-b886-5c197adaf32d)
+2026-05-29 17:56:53 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 139.6132  slippage=-0.0698  commission=13.9613
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 139.6132  comm=13.9613  realised_pnl=-997.55
+2026-05-29 17:56:53 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=f66c30a4-5754-4f4d-8014-2fa930b7c2fc)
+2026-05-29 17:56:53 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 147.4437  slippage=0.0737  commission=14.7444
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 147.4437  comm=14.7444  realised_pnl=0.00
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=2d463f23-7ef1-41a4-baf3-5013eb622b28)
+2026-05-29 17:56:53 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 139.6132  slippage=-0.0698  commission=13.9613
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 139.6132  comm=13.9613  realised_pnl=-783.05
+2026-05-29 17:56:53 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=6ae4f7cb-9b53-4e7c-bc23-ac484c18d12a)
+2026-05-29 17:56:53 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 142.8601  slippage=0.0714  commission=14.2860
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 142.8601  comm=14.2860  realised_pnl=0.00
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=1bf3b53e-d0d1-4694-9a05-16d606f281a6)
+2026-05-29 17:56:53 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 141.6681  slippage=-0.0709  commission=14.1668
+2026-05-29 17:56:53 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 141.6681  comm=14.1668  realised_pnl=-119.19
+2026-05-29 17:56:53 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:54 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=a583de08-04cb-418e-b805-06117d51641e)
+2026-05-29 17:56:54 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 146.4427  slippage=0.0732  commission=14.6443
+2026-05-29 17:56:54 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 146.4427  comm=14.6443  realised_pnl=0.00
+2026-05-29 17:56:54 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=fb732924-31b5-42d2-aa03-48172c486c38)
+2026-05-29 17:56:54 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 136.0255  slippage=-0.0680  commission=13.6026
+2026-05-29 17:56:54 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 136.0255  comm=13.6026  realised_pnl=-1041.71
+2026-05-29 17:56:54 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=c42b034c-a284-416c-b6ce-7a2a520a5e57)
+2026-05-29 17:56:54 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 142.8601  slippage=0.0714  commission=14.2860
+2026-05-29 17:56:54 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 142.8601  comm=14.2860  realised_pnl=0.00
+2026-05-29 17:56:54 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:54 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=1c2cafe7-57ca-4a2a-8f83-2711ac5fab40)
+2026-05-29 17:56:54 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 140.9167  slippage=0.0704  commission=14.0917
+2026-05-29 17:56:54 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 140.9167  comm=14.0917  realised_pnl=0.00
+2026-05-29 17:56:54 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=9cc7ca89-eb77-48b9-8c5b-28e3ef22de91)
+2026-05-29 17:56:54 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 137.3556  slippage=-0.0687  commission=13.7356
+2026-05-29 17:56:54 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 137.3556  comm=13.7356  realised_pnl=-356.11
+2026-05-29 17:56:54 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=3c3ce9a2-f6d2-4068-847d-2f5cf722ba27)
+2026-05-29 17:56:54 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 143.4923  slippage=0.0717  commission=14.3492
+2026-05-29 17:56:54 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 143.4923  comm=14.3492  realised_pnl=0.00
+2026-05-29 17:56:54 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:54 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=c5366807-2a50-4310-890b-5a73d566f403)
+2026-05-29 17:56:54 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 140.9855  slippage=0.0705  commission=14.0985
+2026-05-29 17:56:54 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 140.9855  comm=14.0985  realised_pnl=0.00
+2026-05-29 17:56:54 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:54 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:54 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=292db219-98cd-45d1-9096-e2db796a669f)
+2026-05-29 17:56:54 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 139.5247  slippage=0.0697  commission=13.9525
+2026-05-29 17:56:54 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 139.5247  comm=13.9525  realised_pnl=0.00
+2026-05-29 17:56:54 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=5da8df66-e59d-429c-a555-4cf6e83db95d)
+2026-05-29 17:56:54 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 143.3489  slippage=-0.0717  commission=14.3349
+2026-05-29 17:56:54 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 143.3489  comm=14.3349  realised_pnl=382.42
+2026-05-29 17:56:54 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:54 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=883147b5-ebc6-4f91-9c52-eba84238e591)
+2026-05-29 17:56:54 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 141.8192  slippage=0.0709  commission=14.1819
+2026-05-29 17:56:54 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 141.8192  comm=14.1819  realised_pnl=0.00
+2026-05-29 17:56:54 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:54 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:55 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:55 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=13e60797-7420-4046-bdff-900907dd34d6)
+2026-05-29 17:56:55 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 135.4686  slippage=0.0677  commission=13.5469
+2026-05-29 17:56:55 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 135.4686  comm=13.5469  realised_pnl=0.00
+2026-05-29 17:56:55 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=6bd674bc-1ea9-4daf-a729-0c00bc264bb0)
+2026-05-29 17:56:55 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 139.6132  slippage=-0.0698  commission=13.9613
+2026-05-29 17:56:55 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 139.6132  comm=13.9613  realised_pnl=414.46
+2026-05-29 17:56:55 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:55 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=31d5188e-6393-4e4f-b55e-ce72fb957f2d)
+2026-05-29 17:56:55 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 149.5887  slippage=0.0748  commission=14.9589
+2026-05-29 17:56:55 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 149.5887  comm=14.9589  realised_pnl=0.00
+2026-05-29 17:56:55 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=69a76c9f-264c-410d-a167-551cb106c8b8)
+2026-05-29 17:56:55 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 141.6775  slippage=-0.0709  commission=14.1677
+2026-05-29 17:56:55 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 141.6775  comm=14.1677  realised_pnl=-791.12
+2026-05-29 17:56:55 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:55 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:55 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:55 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=e7a5e2b6-e28d-4505-8918-06c3a4144be8)
+2026-05-29 17:56:55 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 158.0998  slippage=0.0790  commission=15.8100
+2026-05-29 17:56:55 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 158.0998  comm=15.8100  realised_pnl=0.00
+2026-05-29 17:56:55 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=12428658-62a8-43bf-8461-9e4d22ac66e5)
+2026-05-29 17:56:55 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 157.5795  slippage=-0.0788  commission=15.7580
+2026-05-29 17:56:55 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 157.5795  comm=15.7580  realised_pnl=-52.02
+2026-05-29 17:56:55 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=22b11478-6cde-4b06-9daf-349a999bfcef)
+2026-05-29 17:56:55 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 148.6023  slippage=0.0743  commission=14.8602
+2026-05-29 17:56:55 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 148.6023  comm=14.8602  realised_pnl=0.00
+2026-05-29 17:56:55 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:55 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=35ed4ba2-f9ef-4051-a224-afa31abcfb69)
+2026-05-29 17:56:55 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 142.8601  slippage=0.0714  commission=14.2860
+2026-05-29 17:56:55 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 142.8601  comm=14.2860  realised_pnl=0.00
+2026-05-29 17:56:56 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=a92d9638-75fa-413f-9299-4af1d22b3f1a)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 139.5138  slippage=0.0697  commission=13.9514
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 139.5138  comm=13.9514  realised_pnl=0.00
+2026-05-29 17:56:56 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:56 | INFO     | aqc.research.optimizer              | GridSearch complete: best sharpe_ratio=-2.5517  params={'fast_period': 15, 'slow_period': 30}  total=3.04s
+2026-05-29 17:56:56 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=6f1c91ce-f150-43e6-8fb5-04f6c9668fcf)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 139.5247  slippage=0.0697  commission=13.9525
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 139.5247  comm=13.9525  realised_pnl=0.00
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=b33bfa9b-b549-4657-a642-d81a60d651f7)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 143.3489  slippage=-0.0717  commission=14.3349
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 143.3489  comm=14.3349  realised_pnl=382.42
+2026-05-29 17:56:56 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=b53bd5d2-9e6b-4b11-8f59-d45329fedb9e)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 141.1551  slippage=0.0705  commission=14.1155
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 141.1551  comm=14.1155  realised_pnl=0.00
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=212285af-aa40-4816-a775-23f3af7ea95b)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 141.8657  slippage=-0.0710  commission=14.1866
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 141.8657  comm=14.1866  realised_pnl=71.06
+2026-05-29 17:56:56 | INFO     | aqc.research.walk_forward           |   Fold 1 complete: best_params={'fast_period': 15, 'slow_period': 30}  train_sharpe_ratio=-2.5517  test_sharpe_ratio=-1.7003  (3.3s)
+2026-05-29 17:56:56 | INFO     | aqc.research.walk_forward           | Fold 2/4  train=[2020-04-16, 2020-11-11]  test=[2020-11-12, 2021-02-24]
+2026-05-29 17:56:56 | INFO     | aqc.research.optimizer              | GridSearch starting: 20 combinations, objective=sharpe_ratio
+2026-05-29 17:56:56 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=4257079b-1d57-4c48-9bca-51338e6fdaf7)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 149.0178  slippage=0.0745  commission=14.9018
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 149.0178  comm=14.9018  realised_pnl=0.00
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=776b6387-3901-403e-98fd-4678f6d34f8c)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 140.7759  slippage=-0.0704  commission=14.0776
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 140.7759  comm=14.0776  realised_pnl=-824.19
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=c8b39844-394c-4ed3-b930-e3d2e69b36b6)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 149.5887  slippage=0.0748  commission=14.9589
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 149.5887  comm=14.9589  realised_pnl=0.00
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=93e9f7ce-05c2-48f0-a035-3566daa9732e)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 139.6132  slippage=-0.0698  commission=13.9613
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 139.6132  comm=13.9613  realised_pnl=-997.55
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=20fe0f1e-e4df-40b8-8f7e-ea3fc04550f3)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 138.7638  slippage=0.0693  commission=13.8764
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 138.7638  comm=13.8764  realised_pnl=0.00
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=3b92c83b-365d-43d1-90a3-2584b5727307)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 136.2451  slippage=-0.0682  commission=13.6245
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 136.2451  comm=13.6245  realised_pnl=-251.87
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=14581ee5-2ba2-4175-97a1-bfa068997149)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 141.1551  slippage=0.0705  commission=14.1155
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 141.1551  comm=14.1155  realised_pnl=0.00
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=3fbce277-e834-406e-8a7f-c3aa17146a96)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 143.1639  slippage=-0.0716  commission=14.3164
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 143.1639  comm=14.3164  realised_pnl=200.88
+2026-05-29 17:56:56 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=2d0604de-a9d4-4282-b038-0b8f1b81ebd0)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 145.1021  slippage=0.0725  commission=14.5102
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 145.1021  comm=14.5102  realised_pnl=0.00
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=4249ae18-022c-475a-b48a-fe545c7830e2)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 139.3853  slippage=-0.0697  commission=13.9385
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 139.3853  comm=13.9385  realised_pnl=-571.69
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=f3092376-3058-4ee6-a721-40f975850fe7)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 149.5887  slippage=0.0748  commission=14.9589
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 149.5887  comm=14.9589  realised_pnl=0.00
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=5f87dafc-4092-4874-9eb0-22e069659f2b)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 139.6132  slippage=-0.0698  commission=13.9613
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 139.6132  comm=13.9613  realised_pnl=-997.55
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=96c3759e-e102-40b5-af97-4ce37c8dc90e)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 141.6770  slippage=0.0708  commission=14.1677
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 141.6770  comm=14.1677  realised_pnl=0.00
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=dc5edd23-1ec5-4c2f-b242-3133138e61ca)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 144.5343  slippage=-0.0723  commission=14.4534
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 144.5343  comm=14.4534  realised_pnl=285.73
+2026-05-29 17:56:56 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=4ed8ca4b-2dcc-488b-b290-4498f9a155c8)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 147.4437  slippage=0.0737  commission=14.7444
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 147.4437  comm=14.7444  realised_pnl=0.00
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=794c3fdd-b20c-46f8-9a6d-38c4ccaf3698)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 139.6132  slippage=-0.0698  commission=13.9613
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 139.6132  comm=13.9613  realised_pnl=-783.05
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=d516e3fd-77d8-4e93-8968-97f0bff111e0)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 140.8628  slippage=0.0704  commission=14.0863
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 140.8628  comm=14.0863  realised_pnl=0.00
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=3e098b87-4de8-4df5-962b-f89c8b881861)
+2026-05-29 17:56:56 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 141.7438  slippage=-0.0709  commission=14.1744
+2026-05-29 17:56:56 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 141.7438  comm=14.1744  realised_pnl=88.10
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=51f2d21a-e40b-4ba7-99a3-ea98b343fd6a)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 145.0271  slippage=0.0725  commission=14.5027
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 145.0271  comm=14.5027  realised_pnl=0.00
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=b1a6999e-779a-42a2-a4dc-1c6a6ce75402)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 143.1915  slippage=-0.0716  commission=14.3191
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 143.1915  comm=14.3191  realised_pnl=-183.56
+2026-05-29 17:56:57 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=3474dab4-4f19-487a-9976-cc125095e481)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 142.8601  slippage=0.0714  commission=14.2860
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 142.8601  comm=14.2860  realised_pnl=0.00
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=497af462-e3b1-417f-9fbc-ed54954b3f26)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 141.6681  slippage=-0.0709  commission=14.1668
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 141.6681  comm=14.1668  realised_pnl=-119.19
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=b44ee85c-c7f2-432d-aa74-d50c03fe8ea6)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 143.2771  slippage=0.0716  commission=14.3277
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 143.2771  comm=14.3277  realised_pnl=0.00
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=b6989c60-2e72-48d9-95fe-61f9391dcd79)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 141.8657  slippage=-0.0710  commission=14.1866
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 141.8657  comm=14.1866  realised_pnl=-141.14
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=1150106b-ea8a-4e7b-98f1-58d54afe018f)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 146.4903  slippage=0.0732  commission=14.6490
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 146.4903  comm=14.6490  realised_pnl=0.00
+2026-05-29 17:56:57 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=e05e442b-30af-42e7-b9a7-9b8f7196085d)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 146.4427  slippage=0.0732  commission=14.6443
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 146.4427  comm=14.6443  realised_pnl=0.00
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=671a6061-57e7-4397-80bb-60144d4fd518)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 136.0255  slippage=-0.0680  commission=13.6026
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 136.0255  comm=13.6026  realised_pnl=-1041.71
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=cf8a135e-5378-4628-941f-af8aa6136ab9)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 142.8601  slippage=0.0714  commission=14.2860
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 142.8601  comm=14.2860  realised_pnl=0.00
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=bf78e090-895e-48ba-9d73-eb74c02ee575)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 141.7875  slippage=-0.0709  commission=14.1788
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 141.7875  comm=14.1788  realised_pnl=-107.26
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=072a1bdf-0c7d-4d01-a224-b43f8992eb8a)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 143.2771  slippage=0.0716  commission=14.3277
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 143.2771  comm=14.3277  realised_pnl=0.00
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=e25f46b6-fdd8-46e6-bce9-58b6582ccbdc)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 141.7438  slippage=-0.0709  commission=14.1744
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 141.7438  comm=14.1744  realised_pnl=-153.33
+2026-05-29 17:56:57 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=9fd194aa-a440-4840-b8a3-9f77a44a8770)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 140.9167  slippage=0.0704  commission=14.0917
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 140.9167  comm=14.0917  realised_pnl=0.00
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=82ae46ef-84da-4b12-9cc4-e06da89f13f8)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 137.3556  slippage=-0.0687  commission=13.7356
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 137.3556  comm=13.7356  realised_pnl=-356.11
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=7c729220-1653-4106-aa10-8f4a219a6805)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 143.4923  slippage=0.0717  commission=14.3492
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 143.4923  comm=14.3492  realised_pnl=0.00
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=48c2c0c5-5bda-4763-a44e-64c7cc60c05c)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 139.6577  slippage=-0.0699  commission=13.9658
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 139.6577  comm=13.9658  realised_pnl=-383.46
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=3bc55d71-574a-4bc9-956d-452194d1d11d)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 144.2592  slippage=0.0721  commission=14.4259
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 144.2592  comm=14.4259  realised_pnl=0.00
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=ceba8c48-4c71-4c85-95e5-5ce6ec781bf2)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 140.8955  slippage=-0.0705  commission=14.0895
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 140.8955  comm=14.0895  realised_pnl=-336.38
+2026-05-29 17:56:57 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=d59c928f-8f8c-410f-930c-ddd0d20b06d8)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 140.9855  slippage=0.0705  commission=14.0985
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 140.9855  comm=14.0985  realised_pnl=0.00
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=fcd94cb6-fdf2-4e7a-9e6d-3b2d6a6c0049)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 141.7875  slippage=-0.0709  commission=14.1788
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 141.7875  comm=14.1788  realised_pnl=80.20
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=9150e830-d26a-40f7-8854-da306461b53a)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 147.6801  slippage=0.0738  commission=14.7680
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 147.6801  comm=14.7680  realised_pnl=0.00
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=3ab10736-b684-498a-b92c-168dd3748779)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 140.2607  slippage=-0.0702  commission=14.0261
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 140.2607  comm=14.0261  realised_pnl=-741.93
+2026-05-29 17:56:57 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=d6d5941f-31e7-4c9c-a2ee-09f7f958cad4)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 147.6801  slippage=0.0738  commission=14.7680
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 147.6801  comm=14.7680  realised_pnl=0.00
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=7219e3a9-f4fc-4680-89ba-e1fdad40cea8)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 142.4434  slippage=-0.0713  commission=14.2443
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 142.4434  comm=14.2443  realised_pnl=-523.67
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=1751cf26-e50b-4bc7-9df7-e0640a7c2454)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 145.6270  slippage=0.0728  commission=14.5627
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 145.6270  comm=14.5627  realised_pnl=0.00
+2026-05-29 17:56:57 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=27a71302-f21e-4aed-b31c-292ca99b4770)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 139.5247  slippage=0.0697  commission=13.9525
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 139.5247  comm=13.9525  realised_pnl=0.00
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=295123e9-49e1-4fd8-b9aa-77cd1b71ac8a)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 143.3489  slippage=-0.0717  commission=14.3349
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 143.3489  comm=14.3349  realised_pnl=382.42
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=0741e19f-9797-41ee-96c3-33897f0c5038)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 141.9294  slippage=0.0709  commission=14.1929
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 141.9294  comm=14.1929  realised_pnl=0.00
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=214cbdb1-2daa-4855-8cdc-e0ea916e70a7)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 135.2565  slippage=-0.0677  commission=13.5257
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 135.2565  comm=13.5257  realised_pnl=-667.28
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=17942166-1067-477a-8daf-72388a96ac5a)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 141.1551  slippage=0.0705  commission=14.1155
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 141.1551  comm=14.1155  realised_pnl=0.00
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=fc167fe0-8c71-448f-ba1e-856debc9fbc2)
+2026-05-29 17:56:57 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 141.8657  slippage=-0.0710  commission=14.1866
+2026-05-29 17:56:57 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 141.8657  comm=14.1866  realised_pnl=71.06
+2026-05-29 17:56:57 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=c602b89d-399e-432e-9028-486c398785fd)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 141.8192  slippage=0.0709  commission=14.1819
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 141.8192  comm=14.1819  realised_pnl=0.00
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=fd0cb64b-64bd-4fa8-aecb-1d913a05d6ab)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 135.2565  slippage=-0.0677  commission=13.5257
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 135.2565  comm=13.5257  realised_pnl=-656.27
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=ad86cbe0-4cc4-41bf-a290-9cd98410cad9)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 147.6801  slippage=0.0738  commission=14.7680
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 147.6801  comm=14.7680  realised_pnl=0.00
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=cf51ce93-fd1d-4dd8-bb8e-906c37e6768b)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 143.6552  slippage=-0.0719  commission=14.3655
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 143.6552  comm=14.3655  realised_pnl=-402.48
+2026-05-29 17:56:58 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=819f2c3b-120d-468b-8c29-97dc564ed341)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 141.9294  slippage=0.0709  commission=14.1929
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 141.9294  comm=14.1929  realised_pnl=0.00
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=12c6c9dd-e033-4f10-bbf5-c16212d289fe)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 135.2565  slippage=-0.0677  commission=13.5257
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 135.2565  comm=13.5257  realised_pnl=-667.28
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=509a10ee-81a5-4fb9-8030-4036cb5b4ec0)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 145.5078  slippage=0.0727  commission=14.5508
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 145.5078  comm=14.5508  realised_pnl=0.00
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=333960f5-23d4-429a-9598-939341a3d795)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 144.8821  slippage=-0.0725  commission=14.4882
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 144.8821  comm=14.4882  realised_pnl=-62.57
+2026-05-29 17:56:58 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=98bc3773-b48e-4427-aed9-da9932be9bc9)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 145.5078  slippage=0.0727  commission=14.5508
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 145.5078  comm=14.5508  realised_pnl=0.00
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=acfb8e51-ffe4-4881-944f-f3af1c2ff174)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 145.0386  slippage=-0.0726  commission=14.5039
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 145.0386  comm=14.5039  realised_pnl=-46.92
+2026-05-29 17:56:58 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=c923540b-231a-42c6-b80e-a77dd0862a36)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 135.4686  slippage=0.0677  commission=13.5469
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 135.4686  comm=13.5469  realised_pnl=0.00
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=ffbef808-6fc3-41e2-970c-acff3fadea41)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 139.6132  slippage=-0.0698  commission=13.9613
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 139.6132  comm=13.9613  realised_pnl=414.46
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=fb017f82-5874-470c-a925-bbb51be94978)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 139.4138  slippage=0.0697  commission=13.9414
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 139.4138  comm=13.9414  realised_pnl=0.00
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=cbfc4326-f858-49a6-8120-d43df2cbd6ca)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 136.0533  slippage=-0.0681  commission=13.6053
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 136.0533  comm=13.6053  realised_pnl=-336.04
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=a663a60a-29b7-466f-9c74-356410f97782)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 141.6770  slippage=0.0708  commission=14.1677
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 141.6770  comm=14.1677  realised_pnl=0.00
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=1edad743-a63d-4861-b3e2-6bf9c80f1345)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 140.8955  slippage=-0.0705  commission=14.0895
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 140.8955  comm=14.0895  realised_pnl=-78.16
+2026-05-29 17:56:58 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=6068b8df-3838-4ac6-9dfe-1e55d0e8f381)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 149.5887  slippage=0.0748  commission=14.9589
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 149.5887  comm=14.9589  realised_pnl=0.00
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=59ec7aab-a98b-4b39-97b2-f1e0a065d3d5)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 141.6775  slippage=-0.0709  commission=14.1677
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 141.6775  comm=14.1677  realised_pnl=-791.12
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=5bae83f9-8074-4a35-8c0a-1ddc1fb4d862)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 144.2592  slippage=0.0721  commission=14.4259
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 144.2592  comm=14.4259  realised_pnl=0.00
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=5a7032e7-a0d4-4712-9f95-e98532e59f4d)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 146.3439  slippage=-0.0732  commission=14.6344
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 146.3439  comm=14.6344  realised_pnl=208.47
+2026-05-29 17:56:58 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=2bca73de-923c-4594-b627-989e89d9d332)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 139.4138  slippage=0.0697  commission=13.9414
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 139.4138  comm=13.9414  realised_pnl=0.00
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=fd46c065-e87d-4b4a-bddd-61a6c4c43182)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 137.9821  slippage=-0.0690  commission=13.7982
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 137.9821  comm=13.7982  realised_pnl=-143.17
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=71b943d5-bcc8-405e-832e-7086faabe824)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 142.6091  slippage=0.0713  commission=14.2609
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 142.6091  comm=14.2609  realised_pnl=0.00
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=94982369-e9b7-4384-b0f2-55c397c1764a)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 143.1915  slippage=-0.0716  commission=14.3191
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 143.1915  comm=14.3191  realised_pnl=58.24
+2026-05-29 17:56:58 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=7221dc6c-b5ee-4404-a224-0df40e2c6c9b)
+2026-05-29 17:56:58 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 145.5078  slippage=0.0727  commission=14.5508
+2026-05-29 17:56:58 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 145.5078  comm=14.5508  realised_pnl=0.00
+2026-05-29 17:56:59 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=f6e00343-484e-4547-bd7b-4c127a3e911c)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 148.6023  slippage=0.0743  commission=14.8602
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 148.6023  comm=14.8602  realised_pnl=0.00
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=0af0214c-9617-4838-874a-35dbcad56b54)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 141.7875  slippage=-0.0709  commission=14.1788
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 141.7875  comm=14.1788  realised_pnl=-681.48
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=8dd2c302-7954-4be8-9726-ec4623c76b9c)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 138.1201  slippage=0.0690  commission=13.8120
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 138.1201  comm=13.8120  realised_pnl=0.00
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=70601210-b959-430c-ba1b-ec2283c5a863)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 137.3879  slippage=-0.0687  commission=13.7388
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 137.3879  comm=13.7388  realised_pnl=-73.22
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=ab9e1cbc-bdf5-4c17-a2ee-5ec904b7348e)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 138.3614  slippage=0.0691  commission=13.8361
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 138.3614  comm=13.8361  realised_pnl=0.00
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=b1fda58b-466f-488f-bd01-be97859c6c36)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 143.1339  slippage=-0.0716  commission=14.3134
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 143.1339  comm=14.3134  realised_pnl=477.25
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=04514bb4-8cf8-4e78-a1dd-11f4feba502f)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 147.6801  slippage=0.0738  commission=14.7680
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 147.6801  comm=14.7680  realised_pnl=0.00
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=e45cbc7d-f09b-4a45-8201-6b3c9140b543)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 146.6248  slippage=-0.0733  commission=14.6625
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 146.6248  comm=14.6625  realised_pnl=-105.52
+2026-05-29 17:56:59 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=94582ac8-345c-4f35-a60e-1f1dedc22efa)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 142.8601  slippage=0.0714  commission=14.2860
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 142.8601  comm=14.2860  realised_pnl=0.00
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=8a6c1da6-e2e6-49b3-bde7-1f964e4281bd)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 135.3115  slippage=-0.0677  commission=13.5312
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 135.3115  comm=13.5312  realised_pnl=-754.85
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=a20ab223-736e-4dc3-b6f7-d51239100638)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 147.6801  slippage=0.0738  commission=14.7680
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 147.6801  comm=14.7680  realised_pnl=0.00
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=5b5098f6-7e6a-40f9-a2bd-7544e5907a02)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 144.4542  slippage=-0.0723  commission=14.4454
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 144.4542  comm=14.4454  realised_pnl=-322.59
+2026-05-29 17:56:59 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=57155b60-58f1-4498-a7eb-d5fb1e71d89b)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 139.5138  slippage=0.0697  commission=13.9514
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 139.5138  comm=13.9514  realised_pnl=0.00
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=8a5c5db9-0186-49cf-bfef-1bc3a4e4d0f6)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 141.7875  slippage=-0.0709  commission=14.1788
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 141.7875  comm=14.1788  realised_pnl=227.37
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=b6253b4c-d900-4358-a3fc-5459a39cd03c)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 146.2432  slippage=0.0731  commission=14.6243
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 146.2432  comm=14.6243  realised_pnl=0.00
+2026-05-29 17:56:59 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=c6e1c621-1267-4086-a4f8-2f8a58864723)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 146.2432  slippage=0.0731  commission=14.6243
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 146.2432  comm=14.6243  realised_pnl=0.00
+2026-05-29 17:56:59 | INFO     | aqc.research.optimizer              | GridSearch complete: best sharpe_ratio=-1.9742  params={'fast_period': 20, 'slow_period': 30}  total=3.13s
+2026-05-29 17:56:59 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=6d313430-44ee-4abb-8d77-1d69753a336c)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 135.4686  slippage=0.0677  commission=13.5469
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 135.4686  comm=13.5469  realised_pnl=0.00
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=5f7f4fe8-1cf1-4148-a09d-29b036047610)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 139.6132  slippage=-0.0698  commission=13.9613
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 139.6132  comm=13.9613  realised_pnl=414.46
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=32886148-1c76-4c54-beb4-d2a36f497990)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 139.4138  slippage=0.0697  commission=13.9414
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 139.4138  comm=13.9414  realised_pnl=0.00
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=733a0246-4a32-41ad-9c70-ccbd99d85f90)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 136.0533  slippage=-0.0681  commission=13.6053
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 136.0533  comm=13.6053  realised_pnl=-336.04
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=834b5031-14ef-4d49-805a-48aa9d3b2271)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 141.6770  slippage=0.0708  commission=14.1677
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 141.6770  comm=14.1677  realised_pnl=0.00
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=af23c4f9-dc4e-4999-9d9e-8f231499ca4d)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 140.8955  slippage=-0.0705  commission=14.0895
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 140.8955  comm=14.0895  realised_pnl=-78.16
+2026-05-29 17:56:59 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=8d680b39-d6b5-4112-837c-1560b222ecdb)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 140.0362  slippage=0.0700  commission=14.0036
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 140.0362  comm=14.0036  realised_pnl=0.00
+2026-05-29 17:56:59 | INFO     | aqc.research.walk_forward           |   Fold 2 complete: best_params={'fast_period': 20, 'slow_period': 30}  train_sharpe_ratio=-1.9742  test_sharpe_ratio=-1.7553  (3.4s)
+2026-05-29 17:56:59 | INFO     | aqc.research.walk_forward           | Fold 3/4  train=[2020-07-30, 2021-02-24]  test=[2021-02-25, 2021-06-09]
+2026-05-29 17:56:59 | INFO     | aqc.research.optimizer              | GridSearch starting: 20 combinations, objective=sharpe_ratio
+2026-05-29 17:56:59 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=97289b72-997d-424b-968a-713decb0a32d)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 141.1551  slippage=0.0705  commission=14.1155
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 141.1551  comm=14.1155  realised_pnl=0.00
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=118a9618-7cc0-42a7-a784-6bfdf07bcc88)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 143.1639  slippage=-0.0716  commission=14.3164
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 143.1639  comm=14.3164  realised_pnl=200.88
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=1381c632-9271-4697-be01-65064cd0b231)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 154.0810  slippage=0.0770  commission=15.4081
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 154.0810  comm=15.4081  realised_pnl=0.00
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=00d4ae8b-cd4b-404f-a170-81aca8d4620e)
+2026-05-29 17:56:59 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 140.3928  slippage=-0.0702  commission=14.0393
+2026-05-29 17:56:59 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 140.3928  comm=14.0393  realised_pnl=-1368.81
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=c7b2a88f-2dcd-4fd7-9289-5e821307d1c9)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 141.1575  slippage=0.0705  commission=14.1157
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 141.1575  comm=14.1157  realised_pnl=0.00
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=9ee7eafc-3733-40f2-b486-8b4fcbd7d9c6)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 137.2610  slippage=-0.0687  commission=13.7261
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 137.2610  comm=13.7261  realised_pnl=-389.65
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=e39ff19c-3696-4ee1-8e83-0a1a63099730)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 140.4192  slippage=0.0702  commission=14.0419
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 140.4192  comm=14.0419  realised_pnl=0.00
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=14087224-f50d-4188-b8aa-c4e90c02342c)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 143.4878  slippage=-0.0718  commission=14.3488
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 143.4878  comm=14.3488  realised_pnl=306.86
+2026-05-29 17:57:00 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=047d3775-f471-4543-b577-8b1f297d1a4e)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 154.0810  slippage=0.0770  commission=15.4081
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 154.0810  comm=15.4081  realised_pnl=0.00
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=da0e6eb8-dda7-4898-9079-e8eabde2b7c5)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 142.5911  slippage=-0.0713  commission=14.2591
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 142.5911  comm=14.2591  realised_pnl=-1148.99
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=ed5b8b20-8819-4d26-b82f-0ea23f4b1855)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 141.4445  slippage=0.0707  commission=14.1444
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 141.4445  comm=14.1444  realised_pnl=0.00
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=1a8e067b-28f6-415e-8a5c-38b0597c1970)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 143.4392  slippage=-0.0718  commission=14.3439
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 143.4392  comm=14.3439  realised_pnl=199.47
+2026-05-29 17:57:00 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=c6217c1d-78bd-4f50-9d81-c9f1f92cb2be)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 145.0271  slippage=0.0725  commission=14.5027
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 145.0271  comm=14.5027  realised_pnl=0.00
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=ed3d88d1-9934-4d66-86f7-8c4f09025549)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 143.1915  slippage=-0.0716  commission=14.3191
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 143.1915  comm=14.3191  realised_pnl=-183.56
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=df305a82-7c6e-4594-9aef-2c0e4388b412)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 154.0810  slippage=0.0770  commission=15.4081
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 154.0810  comm=15.4081  realised_pnl=0.00
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=bd0486ed-77e8-4144-a808-7d5fbdca7f72)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 142.5911  slippage=-0.0713  commission=14.2591
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 142.5911  comm=14.2591  realised_pnl=-1148.99
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=4a9fa8f8-eb04-400b-9851-aead84c6980c)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 145.0922  slippage=0.0725  commission=14.5092
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 145.0922  comm=14.5092  realised_pnl=0.00
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=736771c0-ecfb-4290-8cc6-82fb903a8746)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 139.7647  slippage=-0.0699  commission=13.9765
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 139.7647  comm=13.9765  realised_pnl=-532.75
+2026-05-29 17:57:00 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=b608753b-21ec-4a9e-896d-59339177e5e4)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 146.4903  slippage=0.0732  commission=14.6490
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 146.4903  comm=14.6490  realised_pnl=0.00
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=b068da84-d2b8-4b71-937e-aa3b6d117907)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 140.3928  slippage=-0.0702  commission=14.0393
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 140.3928  comm=14.0393  realised_pnl=-609.75
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=06b306ec-73e2-48c0-8d5a-8c1e722d5362)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 148.6166  slippage=0.0743  commission=14.8617
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 148.6166  comm=14.8617  realised_pnl=0.00
+2026-05-29 17:57:00 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=8d9693a3-d494-462c-9138-4962c9e68347)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 143.2771  slippage=0.0716  commission=14.3277
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 143.2771  comm=14.3277  realised_pnl=0.00
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=42a68ac1-d85c-4f87-a385-6997b0121dc6)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 141.7438  slippage=-0.0709  commission=14.1744
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 141.7438  comm=14.1744  realised_pnl=-153.33
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=bc9562c4-d250-499a-a081-5a2f02bb724d)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 152.1824  slippage=0.0761  commission=15.2182
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 152.1824  comm=15.2182  realised_pnl=0.00
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=d6ca5990-c05a-4966-bf2f-4e7facda1ece)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 137.5724  slippage=-0.0688  commission=13.7572
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 137.5724  comm=13.7572  realised_pnl=-1461.00
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=bdca9f33-27bb-44f0-a568-da50406ef58f)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 137.8933  slippage=0.0689  commission=13.7893
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 137.8933  comm=13.7893  realised_pnl=0.00
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=b593016b-f9a5-4679-baba-0a35ec901343)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 144.1839  slippage=-0.0721  commission=14.4184
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 144.1839  comm=14.4184  realised_pnl=629.06
+2026-05-29 17:57:00 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=2b29ac82-af2d-4cfe-8f38-2dc263509a18)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 151.5884  slippage=0.0758  commission=15.1588
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 151.5884  comm=15.1588  realised_pnl=0.00
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=b9227482-d5a3-41b5-9d15-09f9c9da0c2d)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 139.3380  slippage=-0.0697  commission=13.9338
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 139.3380  comm=13.9338  realised_pnl=-1225.03
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=c3ed29c3-c8b3-4422-8817-bb9e12edf56d)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 140.7002  slippage=0.0703  commission=14.0700
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 140.7002  comm=14.0700  realised_pnl=0.00
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=3c39834e-72c3-4ef8-96d8-f61bc694a0b8)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 140.5102  slippage=-0.0703  commission=14.0510
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 140.5102  comm=14.0510  realised_pnl=-19.00
+2026-05-29 17:57:00 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=f15ce089-fbd5-462d-b05a-fbc9720048e6)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 154.0810  slippage=0.0770  commission=15.4081
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 154.0810  comm=15.4081  realised_pnl=0.00
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=b8a3e2c7-713a-40e4-9c45-21bf278ee35f)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 140.3928  slippage=-0.0702  commission=14.0393
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 140.3928  comm=14.0393  realised_pnl=-1368.81
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=57dacc08-69c8-43c5-9d59-7ffc9616ca0d)
+2026-05-29 17:57:00 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 148.6166  slippage=0.0743  commission=14.8617
+2026-05-29 17:57:00 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 148.6166  comm=14.8617  realised_pnl=0.00
+2026-05-29 17:57:00 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=9abb5a25-1d4e-4f4a-8586-8d137c7f60c7)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 145.6270  slippage=0.0728  commission=14.5627
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 145.6270  comm=14.5627  realised_pnl=0.00
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=fc24ac14-a5ee-4294-87c6-55efae8d793f)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 139.3380  slippage=-0.0697  commission=13.9338
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 139.3380  comm=13.9338  realised_pnl=-628.90
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=1075d46e-ada8-4f08-ae91-c08e92dec031)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 149.5390  slippage=0.0747  commission=14.9539
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 149.5390  comm=14.9539  realised_pnl=0.00
+2026-05-29 17:57:01 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=5f953be4-b141-4fdc-b5a5-9a7412a8f2d0)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 141.1551  slippage=0.0705  commission=14.1155
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 141.1551  comm=14.1155  realised_pnl=0.00
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=a187307f-a767-4990-be25-eab0e917e702)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 141.8657  slippage=-0.0710  commission=14.1866
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 141.8657  comm=14.1866  realised_pnl=71.06
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=5032446a-34ec-4e76-bf48-78980a748edb)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 151.5884  slippage=0.0758  commission=15.1588
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 151.5884  comm=15.1588  realised_pnl=0.00
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=1601d599-8d93-4639-9809-fb36853ab36c)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 133.9103  slippage=-0.0670  commission=13.3910
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 133.9103  comm=13.3910  realised_pnl=-1767.81
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=7c3cb55f-9277-49b8-9733-240cfd119a6b)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 137.9328  slippage=0.0689  commission=13.7933
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 137.9328  comm=13.7933  realised_pnl=0.00
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=b61d3eb9-3adc-4f68-80d2-2f45502b2d72)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 139.7647  slippage=-0.0699  commission=13.9765
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 139.7647  comm=13.9765  realised_pnl=183.18
+2026-05-29 17:57:01 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=ae89e552-2bc7-43c0-b2b3-62b75d2db3bd)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 147.1065  slippage=0.0735  commission=14.7106
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 147.1065  comm=14.7106  realised_pnl=0.00
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=bc81d1cc-29b3-4aba-8436-138bc22afb3f)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 133.9103  slippage=-0.0670  commission=13.3910
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 133.9103  comm=13.3910  realised_pnl=-1319.62
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=d4bfab40-526d-4963-823c-11cc4cbe1d21)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 140.5512  slippage=0.0702  commission=14.0551
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 140.5512  comm=14.0551  realised_pnl=0.00
+2026-05-29 17:57:01 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=ff338b65-d2dc-4ad2-b387-74c0eabc1120)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 148.3564  slippage=0.0741  commission=14.8356
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 148.3564  comm=14.8356  realised_pnl=0.00
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=039b38cb-a5f9-4c5e-a9c9-97049d36a3ec)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 137.4329  slippage=-0.0688  commission=13.7433
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 137.4329  comm=13.7433  realised_pnl=-1092.34
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=b9ddf6a0-6357-4acb-9d86-c58530a41c05)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 147.8963  slippage=0.0739  commission=14.7896
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 147.8963  comm=14.7896  realised_pnl=0.00
+2026-05-29 17:57:01 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=6b708f6a-2199-4a32-aa7b-5e6335102b90)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 154.0810  slippage=0.0770  commission=15.4081
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 154.0810  comm=15.4081  realised_pnl=0.00
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=4f4e602e-5ee4-418f-a61e-1672df7f7886)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 137.4329  slippage=-0.0688  commission=13.7433
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 137.4329  comm=13.7433  realised_pnl=-1664.80
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=12d4450e-9149-46dd-b021-e6e33f16d522)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 145.5072  slippage=0.0727  commission=14.5507
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 145.5072  comm=14.5507  realised_pnl=0.00
+2026-05-29 17:57:01 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=f9999d2a-181f-4ab7-a72a-7968894370f3)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 141.6770  slippage=0.0708  commission=14.1677
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 141.6770  comm=14.1677  realised_pnl=0.00
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=1c013fb5-29d4-464d-81f5-c474653bb56b)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 140.8955  slippage=-0.0705  commission=14.0895
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 140.8955  comm=14.0895  realised_pnl=-78.16
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=bcf8b966-d15d-41b9-8228-e573863e7462)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 147.8637  slippage=0.0739  commission=14.7864
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 147.8637  comm=14.7864  realised_pnl=0.00
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=1ee3fb23-e5e1-4705-99a1-6f6347bf8a8d)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 135.3553  slippage=-0.0677  commission=13.5355
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 135.3553  comm=13.5355  realised_pnl=-1250.84
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=d10fa51f-2f2b-4de4-be41-d81c4a157869)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 140.0362  slippage=0.0700  commission=14.0036
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 140.0362  comm=14.0036  realised_pnl=0.00
+2026-05-29 17:57:01 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=4ed2d6b8-9505-412f-b111-e5d1b2c98a9c)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 149.0441  slippage=0.0745  commission=14.9044
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 149.0441  comm=14.9044  realised_pnl=0.00
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=f791ffbc-d289-4dbd-8045-2eeab670b403)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 135.3553  slippage=-0.0677  commission=13.5355
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 135.3553  comm=13.5355  realised_pnl=-1368.88
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=a16406d9-79d8-4e25-8827-bd7007f745a5)
+2026-05-29 17:57:01 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 140.7002  slippage=0.0703  commission=14.0700
+2026-05-29 17:57:01 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 140.7002  comm=14.0700  realised_pnl=0.00
+2026-05-29 17:57:02 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=bdcba6c9-0aab-4d8f-adb5-aff9a1f89202)
+2026-05-29 17:57:02 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 147.6479  slippage=0.0738  commission=14.7648
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 147.6479  comm=14.7648  realised_pnl=0.00
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=0c71f341-a2de-4e85-b1a1-08cd364899ba)
+2026-05-29 17:57:02 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 142.5911  slippage=-0.0713  commission=14.2591
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 142.5911  comm=14.2591  realised_pnl=-505.68
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=3eee80c9-6a8b-41a7-a61e-9ecf063583db)
+2026-05-29 17:57:02 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 145.5072  slippage=0.0727  commission=14.5507
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 145.5072  comm=14.5507  realised_pnl=0.00
+2026-05-29 17:57:02 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=4beb8c32-a53d-454a-bc1d-b37c63849427)
+2026-05-29 17:57:02 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 152.1824  slippage=0.0761  commission=15.2182
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 152.1824  comm=15.2182  realised_pnl=0.00
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=f133de3d-9707-4ddc-9556-a114fb087176)
+2026-05-29 17:57:02 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 137.5724  slippage=-0.0688  commission=13.7572
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 137.5724  comm=13.7572  realised_pnl=-1461.00
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=4baa81cf-4535-4878-aad4-9d0f121ebbe7)
+2026-05-29 17:57:02 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 148.8343  slippage=0.0744  commission=14.8834
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 148.8343  comm=14.8834  realised_pnl=0.00
+2026-05-29 17:57:02 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=b0fce3a0-135e-45f5-9e9c-616dfffb35b7)
+2026-05-29 17:57:02 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 147.6801  slippage=0.0738  commission=14.7680
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 147.6801  comm=14.7680  realised_pnl=0.00
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=a26fa868-58d2-41b5-a5c7-2c9147d4ccfd)
+2026-05-29 17:57:02 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 146.6248  slippage=-0.0733  commission=14.6625
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 146.6248  comm=14.6625  realised_pnl=-105.52
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=d18f6f28-50bc-4b40-bab1-3c6707f4d5e1)
+2026-05-29 17:57:02 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 149.0441  slippage=0.0745  commission=14.9044
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 149.0441  comm=14.9044  realised_pnl=0.00
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=62ed1522-6e60-40ee-bbca-df04304294be)
+2026-05-29 17:57:02 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 135.3553  slippage=-0.0677  commission=13.5355
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 135.3553  comm=13.5355  realised_pnl=-1368.88
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=e805eef1-548a-4780-9e8c-9f26eafc01a2)
+2026-05-29 17:57:02 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 141.2185  slippage=0.0706  commission=14.1219
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 141.2185  comm=14.1219  realised_pnl=0.00
+2026-05-29 17:57:02 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=4fe45196-f4fc-40ef-b1ca-9db2dbcce3ae)
+2026-05-29 17:57:02 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 137.7100  slippage=0.0688  commission=13.7710
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 137.7100  comm=13.7710  realised_pnl=0.00
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=b20101e4-d9ca-4635-90de-d78a14153d4a)
+2026-05-29 17:57:02 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 132.8196  slippage=-0.0664  commission=13.2820
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 132.8196  comm=13.2820  realised_pnl=-489.04
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=37308751-2ae9-48ad-a43a-b8b2015f4637)
+2026-05-29 17:57:02 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 140.5512  slippage=0.0702  commission=14.0551
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 140.5512  comm=14.0551  realised_pnl=0.00
+2026-05-29 17:57:02 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=b7b56a04-7c8e-41a5-84ff-23988a5f6db4)
+2026-05-29 17:57:02 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 145.5072  slippage=0.0727  commission=14.5507
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 145.5072  comm=14.5507  realised_pnl=0.00
+2026-05-29 17:57:02 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=23188500-304f-47ea-bc3e-be81b525da65)
+2026-05-29 17:57:02 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 149.9701  slippage=0.0749  commission=14.9970
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 149.9701  comm=14.9970  realised_pnl=0.00
+2026-05-29 17:57:02 | INFO     | aqc.research.optimizer              | GridSearch complete: best sharpe_ratio=-2.4356  params={'fast_period': 10, 'slow_period': 30}  total=3.04s
+2026-05-29 17:57:02 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=19212c51-e36b-47ca-8835-83f7e6af2f7d)
+2026-05-29 17:57:02 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 143.2771  slippage=0.0716  commission=14.3277
+2026-05-29 17:57:02 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 143.2771  comm=14.3277  realised_pnl=0.00
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=2658cd0e-8068-4cc2-bc3d-3babcd55a307)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 141.7438  slippage=-0.0709  commission=14.1744
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 141.7438  comm=14.1744  realised_pnl=-153.33
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=200d4d35-6163-4c2b-8a66-f2b4dbe90242)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 152.1824  slippage=0.0761  commission=15.2182
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 152.1824  comm=15.2182  realised_pnl=0.00
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=e08cac51-31e5-450c-bf0f-8920d2f0ac67)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 137.5724  slippage=-0.0688  commission=13.7572
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 137.5724  comm=13.7572  realised_pnl=-1461.00
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=b8fb4466-3047-4d42-8d83-0cf1f8981d23)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 137.8933  slippage=0.0689  commission=13.7893
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 137.8933  comm=13.7893  realised_pnl=0.00
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=4d1c9099-565f-4828-90f5-8cb990ff850a)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 144.1839  slippage=-0.0721  commission=14.4184
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 144.1839  comm=14.4184  realised_pnl=629.06
+2026-05-29 17:57:03 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=7c2933c4-5711-4bcb-a5b7-dc47ea897125)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 166.5289  slippage=0.0832  commission=16.6529
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 166.5289  comm=16.6529  realised_pnl=0.00
+2026-05-29 17:57:03 | INFO     | aqc.research.walk_forward           |   Fold 3 complete: best_params={'fast_period': 10, 'slow_period': 30}  train_sharpe_ratio=-2.4356  test_sharpe_ratio=-0.1811  (3.3s)
+2026-05-29 17:57:03 | INFO     | aqc.research.walk_forward           | Fold 4/4  train=[2020-11-12, 2021-06-09]  test=[2021-06-10, 2021-09-22]
+2026-05-29 17:57:03 | INFO     | aqc.research.optimizer              | GridSearch starting: 20 combinations, objective=sharpe_ratio
+2026-05-29 17:57:03 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=f7059075-f2f1-4f7c-b9e5-afe489027410)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 141.1575  slippage=0.0705  commission=14.1157
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 141.1575  comm=14.1157  realised_pnl=0.00
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=90e5c12f-c7b5-4a88-9a1b-bb952087f46e)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 137.2610  slippage=-0.0687  commission=13.7261
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 137.2610  comm=13.7261  realised_pnl=-389.65
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=6beb8550-c711-41bd-8544-469a1ef40937)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 140.4192  slippage=0.0702  commission=14.0419
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 140.4192  comm=14.0419  realised_pnl=0.00
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=ead138fc-9a66-4209-ab1b-32d700da0d16)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 143.4878  slippage=-0.0718  commission=14.3488
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 143.4878  comm=14.3488  realised_pnl=306.86
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=5b731b69-8159-4a89-bedc-4ee6e168cf1c)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 150.1700  slippage=0.0750  commission=15.0170
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 150.1700  comm=15.0170  realised_pnl=0.00
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=a306d436-6567-4a65-b429-13f964a01f0a)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 162.9224  slippage=-0.0815  commission=16.2922
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 162.9224  comm=16.2922  realised_pnl=1275.24
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=aa4be974-59ef-4eaa-84e7-a521e6b52662)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 165.2335  slippage=0.0826  commission=16.5233
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 165.2335  comm=16.5233  realised_pnl=0.00
+2026-05-29 17:57:03 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=95c845f5-d620-45ba-8fb0-8c9e70982ee4)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 141.4445  slippage=0.0707  commission=14.1444
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 141.4445  comm=14.1444  realised_pnl=0.00
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=eed00e6e-42e8-46c5-9243-16f04bc25579)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 143.4392  slippage=-0.0718  commission=14.3439
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 143.4392  comm=14.3439  realised_pnl=199.47
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=f4f8bced-1c0e-4c06-baaf-362b5f96c793)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 151.2228  slippage=0.0756  commission=15.1223
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 151.2228  comm=15.1223  realised_pnl=0.00
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=4ccd550b-f59a-4e85-94d2-3f7672db5063)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 155.0778  slippage=-0.0776  commission=15.5078
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 155.0778  comm=15.5078  realised_pnl=385.50
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=a426f0cf-b948-462a-b749-d7ed6e8651c3)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 162.5414  slippage=0.0812  commission=16.2541
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 162.5414  comm=16.2541  realised_pnl=0.00
+2026-05-29 17:57:03 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=296b9ed5-39b5-4ce4-a01c-7624ac20f8e9)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 150.1700  slippage=0.0750  commission=15.0170
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 150.1700  comm=15.0170  realised_pnl=0.00
+2026-05-29 17:57:03 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=d7aaeca9-276c-4d12-8d32-a855c1d10c8d)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 142.3505  slippage=0.0711  commission=14.2350
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 142.3505  comm=14.2350  realised_pnl=0.00
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=b93432a8-e806-46ec-b545-e8ab329eb009)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 140.0359  slippage=-0.0701  commission=14.0036
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 140.0359  comm=14.0036  realised_pnl=-231.46
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=1754ef07-6f4d-4713-8509-768765c1b11c)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 150.1700  slippage=0.0750  commission=15.0170
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 150.1700  comm=15.0170  realised_pnl=0.00
+2026-05-29 17:57:03 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=95d04fb6-f814-4103-a688-dab0d20b9506)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 137.8933  slippage=0.0689  commission=13.7893
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 137.8933  comm=13.7893  realised_pnl=0.00
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=8603c83a-3760-4380-8bac-5c3fc4442714)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 144.1839  slippage=-0.0721  commission=14.4184
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 144.1839  comm=14.4184  realised_pnl=629.06
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=33483909-4c6b-4379-92ad-b16fd694bc7e)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 155.2930  slippage=0.0776  commission=15.5293
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 155.2930  comm=15.5293  realised_pnl=0.00
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=a744e501-45e0-4b00-9d04-ce5f35300949)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 158.2649  slippage=-0.0792  commission=15.8265
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 158.2649  comm=15.8265  realised_pnl=297.19
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=6b7214de-c5be-4123-9590-641af2c99fff)
+2026-05-29 17:57:03 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 166.5289  slippage=0.0832  commission=16.6529
+2026-05-29 17:57:03 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 166.5289  comm=16.6529  realised_pnl=0.00
+2026-05-29 17:57:03 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=cd309319-53cf-4500-9aa1-73cac6964798)
+2026-05-29 17:57:04 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 140.7002  slippage=0.0703  commission=14.0700
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 140.7002  comm=14.0700  realised_pnl=0.00
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=c5c73603-3aa6-4a14-99dc-a3deb9aef37f)
+2026-05-29 17:57:04 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 140.5102  slippage=-0.0703  commission=14.0510
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 140.5102  comm=14.0510  realised_pnl=-19.00
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=acbdc705-c595-4278-9358-8a5b901d27fc)
+2026-05-29 17:57:04 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 156.3815  slippage=0.0782  commission=15.6381
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 156.3815  comm=15.6381  realised_pnl=0.00
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=2699c2c5-42db-456c-a665-fb597f9ccc98)
+2026-05-29 17:57:04 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 155.0778  slippage=-0.0776  commission=15.5078
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 155.0778  comm=15.5078  realised_pnl=-130.37
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=46416129-92ce-4de2-a6c9-ee3ba715a5a4)
+2026-05-29 17:57:04 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 166.5289  slippage=0.0832  commission=16.6529
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 166.5289  comm=16.6529  realised_pnl=0.00
+2026-05-29 17:57:04 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=f35e1856-7a90-4241-972c-8f5f36d4aacf)
+2026-05-29 17:57:04 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 151.2228  slippage=0.0756  commission=15.1223
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 151.2228  comm=15.1223  realised_pnl=0.00
+2026-05-29 17:57:04 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=9298c47a-071b-443f-8edf-8f8f6564578e)
+2026-05-29 17:57:04 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 151.2228  slippage=0.0756  commission=15.1223
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 151.2228  comm=15.1223  realised_pnl=0.00
+2026-05-29 17:57:04 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=cc1d7cc5-5f39-4fa8-8450-2d1ae1213afc)
+2026-05-29 17:57:04 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 137.9328  slippage=0.0689  commission=13.7933
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 137.9328  comm=13.7933  realised_pnl=0.00
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=500d57ad-25cf-4c4e-8d0e-2ecd0cf0b069)
+2026-05-29 17:57:04 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 139.7647  slippage=-0.0699  commission=13.9765
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 139.7647  comm=13.9765  realised_pnl=183.18
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=895e3417-3615-42a3-83ff-eed766ea441c)
+2026-05-29 17:57:04 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 156.3815  slippage=0.0782  commission=15.6381
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 156.3815  comm=15.6381  realised_pnl=0.00
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=1cfa3eb6-773c-42e6-b9c6-0aacf22c8074)
+2026-05-29 17:57:04 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 158.6109  slippage=-0.0793  commission=15.8611
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 158.6109  comm=15.8611  realised_pnl=222.94
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=22e11960-7c52-4175-9802-91ff0ee6c229)
+2026-05-29 17:57:04 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 167.2725  slippage=0.0836  commission=16.7272
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 167.2725  comm=16.7272  realised_pnl=0.00
+2026-05-29 17:57:04 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=e7d106e5-3bb6-49f7-92ca-846f4e7a08ae)
+2026-05-29 17:57:04 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 140.5512  slippage=0.0702  commission=14.0551
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 140.5512  comm=14.0551  realised_pnl=0.00
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=46ff30f1-b248-40e3-8b13-261a08a774a8)
+2026-05-29 17:57:04 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 142.9278  slippage=-0.0715  commission=14.2928
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 142.9278  comm=14.2928  realised_pnl=237.66
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=e81c4c32-efd0-44a6-919e-526ee9412cdf)
+2026-05-29 17:57:04 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 158.3992  slippage=0.0792  commission=15.8399
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 158.3992  comm=15.8399  realised_pnl=0.00
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=28323a94-1afa-44b7-a248-baddde68bc95)
+2026-05-29 17:57:04 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 155.0778  slippage=-0.0776  commission=15.5078
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 155.0778  comm=15.5078  realised_pnl=-332.14
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=607e4ae2-6871-4218-b063-36263d78db86)
+2026-05-29 17:57:04 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 165.1863  slippage=0.0826  commission=16.5186
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 165.1863  comm=16.5186  realised_pnl=0.00
+2026-05-29 17:57:04 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=74ff296a-98c0-461b-93a9-d402395a6d85)
+2026-05-29 17:57:04 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 147.8963  slippage=0.0739  commission=14.7896
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 147.8963  comm=14.7896  realised_pnl=0.00
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=d298f4dc-14a0-4f9b-a466-cefebca2929a)
+2026-05-29 17:57:04 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 140.0359  slippage=-0.0701  commission=14.0036
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 140.0359  comm=14.0036  realised_pnl=-786.05
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=85474459-9f0a-496d-a395-48f73ba34b65)
+2026-05-29 17:57:04 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 156.3815  slippage=0.0782  commission=15.6381
+2026-05-29 17:57:04 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 156.3815  comm=15.6381  realised_pnl=0.00
+2026-05-29 17:57:04 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=b7c9c998-d279-412c-98d4-40cbd63d4133)
+2026-05-29 17:57:05 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 155.2930  slippage=0.0776  commission=15.5293
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 155.2930  comm=15.5293  realised_pnl=0.00
+2026-05-29 17:57:05 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=e3dfab3f-247f-4e3a-a508-e092937b197d)
+2026-05-29 17:57:05 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 140.0362  slippage=0.0700  commission=14.0036
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 140.0362  comm=14.0036  realised_pnl=0.00
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=b112d6a4-ebdb-481b-909f-6e97a87ac8a4)
+2026-05-29 17:57:05 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 144.2561  slippage=-0.0722  commission=14.4256
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 144.2561  comm=14.4256  realised_pnl=421.99
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=de01dbdf-5400-4a6d-a1f0-4344ff10bfe8)
+2026-05-29 17:57:05 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 157.7592  slippage=0.0788  commission=15.7759
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 157.7592  comm=15.7759  realised_pnl=0.00
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=0234bce9-0a15-481f-8f2e-ddffaf0b3af4)
+2026-05-29 17:57:05 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 158.7373  slippage=-0.0794  commission=15.8737
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 158.7373  comm=15.8737  realised_pnl=97.82
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=ef1988c9-8e82-4709-b8e1-23d825fa54c5)
+2026-05-29 17:57:05 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 164.5761  slippage=0.0822  commission=16.4576
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 164.5761  comm=16.4576  realised_pnl=0.00
+2026-05-29 17:57:05 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=dbd6ddba-644c-441f-9b2f-2ac860df0379)
+2026-05-29 17:57:05 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 140.7002  slippage=0.0703  commission=14.0700
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 140.7002  comm=14.0700  realised_pnl=0.00
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=6348c7df-9d7a-41be-856e-6d0a5ebc0bd1)
+2026-05-29 17:57:05 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 142.2821  slippage=-0.0712  commission=14.2282
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 142.2821  comm=14.2282  realised_pnl=158.20
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=5ea91379-e6f4-4f8a-b2b6-a6cc1ba718ca)
+2026-05-29 17:57:05 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 157.9799  slippage=0.0790  commission=15.7980
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 157.9799  comm=15.7980  realised_pnl=0.00
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=437b6591-3a0a-4184-9b75-14d494f0cf78)
+2026-05-29 17:57:05 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 161.6592  slippage=-0.0809  commission=16.1659
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 161.6592  comm=16.1659  realised_pnl=367.93
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=177f4843-3524-4339-99d2-d2622ad1204b)
+2026-05-29 17:57:05 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 168.1609  slippage=0.0840  commission=16.8161
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 168.1609  comm=16.8161  realised_pnl=0.00
+2026-05-29 17:57:05 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=89670b7c-e243-4edd-ad91-fbe4b25d149e)
+2026-05-29 17:57:05 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 145.5072  slippage=0.0727  commission=14.5507
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 145.5072  comm=14.5507  realised_pnl=0.00
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=542ca329-e77f-4b55-b104-3abb3ccbd2e1)
+2026-05-29 17:57:05 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 142.1926  slippage=-0.0711  commission=14.2193
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 142.1926  comm=14.2193  realised_pnl=-331.46
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=4a7726ee-a0ea-41e9-bf03-af8e291d0924)
+2026-05-29 17:57:05 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 158.3992  slippage=0.0792  commission=15.8399
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 158.3992  comm=15.8399  realised_pnl=0.00
+2026-05-29 17:57:05 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:05 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=3c5df7cf-523e-4651-98c4-885a89ce3586)
+2026-05-29 17:57:05 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 141.2185  slippage=0.0706  commission=14.1219
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 141.2185  comm=14.1219  realised_pnl=0.00
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=4ae50284-69e2-4cd8-90f4-4e023ed71160)
+2026-05-29 17:57:05 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 141.0314  slippage=-0.0706  commission=14.1031
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 141.0314  comm=14.1031  realised_pnl=-18.72
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=14fa8c26-aa0a-438e-8fb1-337e8ac1031c)
+2026-05-29 17:57:05 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 157.9799  slippage=0.0790  commission=15.7980
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 157.9799  comm=15.7980  realised_pnl=0.00
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=6aa2f46d-caac-4743-9707-79d715e4f5b4)
+2026-05-29 17:57:05 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 159.5554  slippage=-0.0798  commission=15.9555
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 159.5554  comm=15.9555  realised_pnl=157.55
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=01b2ae04-a9f0-4ef2-a65e-a603c5792f6b)
+2026-05-29 17:57:05 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 165.5915  slippage=0.0828  commission=16.5591
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 165.5915  comm=16.5591  realised_pnl=0.00
+2026-05-29 17:57:05 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=c2183a08-cc5e-4c02-b1f2-72559774dfbe)
+2026-05-29 17:57:05 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 140.5512  slippage=0.0702  commission=14.0551
+2026-05-29 17:57:05 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 140.5512  comm=14.0551  realised_pnl=0.00
+2026-05-29 17:57:06 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=51b4e6b0-52ac-4411-a03f-f34dcc724a3d)
+2026-05-29 17:57:06 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 140.0359  slippage=-0.0701  commission=14.0036
+2026-05-29 17:57:06 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 140.0359  comm=14.0036  realised_pnl=-51.53
+2026-05-29 17:57:06 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=31bce7d9-53bf-4ede-ac6a-cc4081e033d2)
+2026-05-29 17:57:06 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 158.8007  slippage=0.0794  commission=15.8801
+2026-05-29 17:57:06 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 158.8007  comm=15.8801  realised_pnl=0.00
+2026-05-29 17:57:06 | INFO     | aqc.backtester.portfolio            | Order submitted: SELL AAPL 100.00 @ MARKET (signal_ref=0caf6f10-ca15-44ff-a024-76c352154c04)
+2026-05-29 17:57:06 | INFO     | aqc.backtester.broker               | Fill generated: SELL AAPL 100.00 @ 162.3789  slippage=-0.0812  commission=16.2379
+2026-05-29 17:57:06 | INFO     | aqc.backtester.portfolio            | Fill processed: SELL AAPL 100.00 @ 162.3789  comm=16.2379  realised_pnl=357.82
+2026-05-29 17:57:06 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=ad1ac3ee-ec48-4dfc-b6f7-0eb20f58e191)
+2026-05-29 17:57:06 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 169.1169  slippage=0.0845  commission=16.9117
+2026-05-29 17:57:06 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 169.1169  comm=16.9117  realised_pnl=0.00
+2026-05-29 17:57:06 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:06 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=acaaec91-1678-4940-aaaf-d09970cd4f8d)
+2026-05-29 17:57:06 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 145.5072  slippage=0.0727  commission=14.5507
+2026-05-29 17:57:06 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 145.5072  comm=14.5507  realised_pnl=0.00
+2026-05-29 17:57:06 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:06 | INFO     | aqc.research.optimizer              | GridSearch complete: best sharpe_ratio=0.4772  params={'fast_period': 25, 'slow_period': 50}  total=3.24s
+2026-05-29 17:57:06 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:06 | INFO     | aqc.backtester.portfolio            | Order submitted: BUY AAPL 100.00 @ MARKET (signal_ref=14fc7dcc-a4a9-48c9-a8d5-a999020ef027)
+2026-05-29 17:57:06 | INFO     | aqc.backtester.broker               | Fill generated: BUY AAPL 100.00 @ 145.5072  slippage=0.0727  commission=14.5507
+2026-05-29 17:57:06 | INFO     | aqc.backtester.portfolio            | Fill processed: BUY AAPL 100.00 @ 145.5072  comm=14.5507  realised_pnl=0.00
+2026-05-29 17:57:06 | INFO     | aqc.risk.risk_manager               | Daily risk state reset: start_equity=100000.00
+2026-05-29 17:57:06 | INFO     | aqc.research.walk_forward           |   Fold 4 complete: best_params={'fast_period': 25, 'slow_period': 50}  train_sharpe_ratio=0.4772  test_sharpe_ratio=nan  (3.5s)
+2026-05-29 17:57:06 | INFO     | aqc.research.walk_forward           | =================================================================
+2026-05-29 17:57:06 | INFO     | aqc.research.walk_forward           | Walk-Forward Complete  (13.4 s total)
+2026-05-29 17:57:06 | INFO     | aqc.research.walk_forward           |   Mean test Sharpe  : -1.2122 +/- 0.7295
+2026-05-29 17:57:06 | INFO     | aqc.research.walk_forward           |   Mean test Return  : 0.29%
+2026-05-29 17:57:06 | INFO     | aqc.research.walk_forward           |   Mean test MaxDD   : -0.65%
+2026-05-29 17:57:06 | INFO     | aqc.research.walk_forward           | =================================================================
+2026-05-29 17:57:06 | INFO     | aqc.research.walk_forward           | Walk-forward results saved to reports\walk_forward_results.csv (4 rows)
+2026-05-29 17:57:06 | INFO     | aqc.research.validation             | 
+====================================================================
+  AQC WALK-FORWARD OPTIMISATION REPORT
+====================================================================
+
+  Mode             : ROLLING
+  Objective        : sharpe_ratio
+  Folds            : 4
+  Total Time       : 13.4s
+
+--------------------------------------------------------------------
+  PER-FOLD RESULTS
+--------------------------------------------------------------------
+
+  Fold  Train Sharpe  Test Sharpe  Train Ret%  Test Ret%  Best Params
+  ----  ------------  -----------  ----------  ---------  ------------------------------
+     0       -2.5517      -1.7003        0.35       0.04  {'fast_period': 15, 'slow_period': 30}
+     1       -1.9742      -1.7553       -0.08       0.04  {'fast_period': 20, 'slow_period': 30}
+     2       -2.4356      -0.1811       -1.07       1.10  {'fast_period': 10, 'slow_period': 30}
+     3        0.4772          N/A        3.20       0.00  {'fast_period': 25, 'slow_period': 50}
+
+--------------------------------------------------------------------
+  AGGREGATE OUT-OF-SAMPLE STATISTICS
+--------------------------------------------------------------------
+
+  Sharpe Ratio        : mean= -1.2122  std= 0.7295  min= -1.7553  max= -0.1811
+  Sortino Ratio       : mean= -1.6610  std= 0.9425  min= -2.4569  max= -0.3371
+  CAGR                : mean=  0.0100  std= 0.0157  min=  0.0000  max=  0.0373
+  Max Drawdown %      : mean= -0.6510  std= 0.4878  min= -1.2291  max=  0.0000
+  Win Rate            : mean=  1.0000  std= 0.0000  min=  1.0000  max=  1.0000
+  Profit Factor       : N/A
+  Total Return %      : mean=  0.2946  std= 0.4625  min=  0.0000  max=  1.0952
+
+--------------------------------------------------------------------
+  IS/OOS CORRELATION
+--------------------------------------------------------------------
+
+  IS/OOS Sharpe Correlation :  -0.3553
+  Interpretation            : Weak/negative correlation — potential overfitting.
+
+--------------------------------------------------------------------
+  PARAMETER STABILITY
+--------------------------------------------------------------------
+
+  fast_period         : mean= 17.5000  std= 5.5902  cv=  0.3194  values=[15, 20, 10, 25]
+  slow_period         : mean= 35.0000  std= 8.6603  cv=  0.2474  values=[30, 30, 30, 50]
+
+====================================================================
+
+2026-05-29 17:57:06 | INFO     | aqc.research.validation             | Walk-forward report saved to reports\walk_forward_report.txt
+2026-05-29 17:57:07 | INFO     | aqc.research.validation             | Equity curve plot saved to reports\wfo_equity_curves.png
+2026-05-29 17:57:08 | INFO     | aqc.research.validation             | Sharpe distribution plot saved to reports\wfo_sharpe_distribution.png
+2026-05-29 17:57:08 | INFO     | aqc.research.validation             | Parameter stability plot saved to reports\wfo_parameter_stability.png
+2026-05-29 17:57:08 | INFO     | aqc.examples.wfo                    | All plots saved to reports/

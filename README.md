@@ -69,6 +69,12 @@ aqc/
 │   ├── execution.py              # ExecutionEngine facade
 │   └── engine.py                 # BacktestEngine (main event loop)
 │
+├── research/                       # Walk-Forward Optimisation (NEW)
+│   ├── parameter_space.py        # IntParam, FloatParam, CategoricalParam, ParameterGrid
+│   ├── optimizer.py              # GridSearchOptimizer, RandomSearchOptimizer
+│   ├── walk_forward.py           # WalkForwardEngine (rolling/expanding windows)
+│   └── validation.py             # IS/OOS statistics, plots, reports
+│
 ├── strategies/
 │   ├── base_strategy.py          # Abstract BaseStrategy
 │   └── sample_strategy.py        # SMACrossover, RSIMeanReversion, EMAMomentum
@@ -97,9 +103,12 @@ tests/
 │   ├── test_portfolio.py
 │   ├── test_risk.py
 │   ├── test_metrics.py
-│   └── test_integration.py
+│   ├── test_integration.py
+│   └── test_wfo.py               # Walk-forward optimisation tests (38 tests)
 │
-notebooks/                        # Jupyter research notebooks
+examples/
+│   └── run_walk_forward.py       # WFO demo with synthetic data
+│
 docs/                             # Extended documentation
 main.py                           # Entry point
 requirements.txt
@@ -150,10 +159,18 @@ Then run:
 python main.py --symbol AAPL
 ```
 
-### 5. Run tests
+### 5. Run Walk-Forward Optimisation
 
 ```bash
-pytest
+python examples/run_walk_forward.py
+```
+
+See [docs/walk_forward_guide.md](docs/walk_forward_guide.md) for full WFO documentation.
+
+### 6. Run tests
+
+```bash
+pytest                                    # 101 tests
 pytest --cov=aqc --cov-report=term-missing
 ```
 
@@ -253,11 +270,14 @@ class MyStrategy(BaseStrategy):
 - [x] Logging (rotating file + console)
 - [x] Unit tests (events, portfolio, risk, metrics, integration)
 
-### Phase 2 — Research Infrastructure
+### Phase 2 — Research Infrastructure (✅ In Progress)
 - [ ] Parquet data pipeline with caching
 - [ ] Multi-symbol portfolio management
-- [ ] Walk-forward optimisation framework
-- [ ] Parameter sensitivity analysis
+- [x] Walk-forward optimisation framework
+- [x] Grid Search + Random Search optimisers
+- [x] Parameter stability analysis (CV, heatmaps)
+- [x] IS/OOS correlation & overfitting detection
+- [x] Publication-quality validation plots
 - [ ] Regime detection (Hidden Markov Models)
 
 ### Phase 3 — Advanced Strategies
