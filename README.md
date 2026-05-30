@@ -81,6 +81,18 @@ aqc/
 │   ├── forecasting_engine.py     # Multi-model ensemble + regime detection
 │   └── volatility_metrics.py     # Position sizing (vol-target, inverse-vol, risk-parity)
 │
+├── regimes/                        # Regime Detection Framework (NEW)
+│   ├── volatility_regime.py      # LOW / NORMAL / HIGH / EXTREME
+│   ├── trend_regime.py           # 5-state: StrongDown → StrongUp (MA slope + ADX)
+│   ├── correlation_regime.py     # Cross-asset correlation regimes
+│   ├── hmm_regime.py             # Gaussian HMM (2/3/4 states, hmmlearn + fallback)
+│   └── regime_engine.py          # Composite RegimeEngine + RegimeFilter
+│
+├── portfolio/                      # Volatility-Targeted Portfolio (NEW)
+│   ├── volatility_portfolio.py   # Vol-forecast-aware position sizing
+│   ├── allocation.py             # Multi-asset allocation (4 methods + 7 constraints)
+│   └── portfolio_metrics.py      # VaR, ES/CVaR, HHI, turnover, risk contribution
+│
 ├── strategies/
 │   ├── base_strategy.py          # Abstract BaseStrategy
 │   ├── sample_strategy.py        # SMACrossover, RSIMeanReversion, EMAMomentum
@@ -112,13 +124,16 @@ configs/
 tests/
 │   ├── test_events.py
 │   ├── test_portfolio.py
+│   ├── test_portfolio_enhanced.py # Portfolio allocator, VaR/ES, comparator (NEW)
 │   ├── test_risk.py
 │   ├── test_metrics.py
 │   ├── test_integration.py
-│   └── test_wfo.py               # Walk-forward optimisation tests (38 tests)
+│   ├── test_wfo.py               # Walk-forward optimisation tests (38 tests)
+│   └── test_regimes.py           # Regime detection tests (39 tests) (NEW)
 │
 examples/
-│   └── run_walk_forward.py       # WFO demo with synthetic data
+│   ├── run_walk_forward.py       # WFO demo with synthetic data
+│   └── run_regime_research.py    # Regime + comparative backtesting demo (NEW)
 │
 docs/                             # Extended documentation
 main.py                           # Entry point
