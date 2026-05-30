@@ -1,0 +1,5 @@
+,category,label,n_trades,total_pnl,avg_pnl,win_rate,avg_return,avg_duration,pct_of_total_pnl
+0,signal_source,Composite,13,37057.42,2850.57,0.6923,0.010718,9.85,18.8
+1,signal_source,VWAP_Reversion,23,-75981.79,-3303.56,0.3478,-0.005498,9.13,-38.55
+2,signal_source,Volume_Exhaustion,20,-14841.67,-742.08,0.6,0.011862,13.45,-7.53
+3,signal_source,ZScore,12,-143355.03,-11946.25,0.4167,-0.025921,14.25,-72.72

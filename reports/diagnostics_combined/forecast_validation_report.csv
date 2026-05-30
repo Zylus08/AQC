@@ -1,0 +1,2 @@
+model,mae,rmse,mape,bias,correlation,n_obs
+ensemble_vol,0.059316,0.076336,18.99,-0.058855,0.9939,86

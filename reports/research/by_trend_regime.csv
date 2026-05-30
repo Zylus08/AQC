@@ -1,0 +1,4 @@
+,category,label,n_trades,total_pnl,avg_pnl,win_rate,avg_return,avg_duration,pct_of_total_pnl
+0,trend_regime,DOWNTREND,2,43332.67,21666.34,0.5,0.050956,9.0,21.98
+1,trend_regime,RANGE_BOUND,30,-41329.12,-1377.64,0.5333,-0.003087,12.1,-20.97
+2,trend_regime,UPTREND,36,-199124.62,-5531.24,0.4722,-0.00195,11.03,-101.02

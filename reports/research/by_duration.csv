@@ -1,0 +1,5 @@
+,category,label,n_trades,total_pnl,avg_pnl,win_rate,avg_return,avg_duration,pct_of_total_pnl
+0,holding_duration_bucket,0-1d,4,-16733.71,-4183.43,0.25,-0.009729,0.75,-8.49
+1,holding_duration_bucket,1-5d,16,-42304.55,-2644.03,0.5,0.001082,3.56,-21.46
+2,holding_duration_bucket,20+d,9,-40557.67,-4506.41,0.4444,-0.009159,24.0,-20.58
+3,holding_duration_bucket,5-20d,39,-97525.14,-2500.64,0.5385,0.001106,12.87,-49.47

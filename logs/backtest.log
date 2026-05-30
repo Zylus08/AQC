@@ -1738,3 +1738,25 @@
 2026-05-29 22:42:17 | WARNING  | aqc.backtester.portfolio            | Order rejected by RiskManager: OrderEvent(event_type=<EventType.ORDER: 3>, event_id='7b78381b-6371-4fb7-9348-59e22c290562', timestamp=datetime.datetime(2026, 5, 29, 17, 12, 17, 361495), symbol='AAPL', order_type=<OrderType.MARKET: 'MARKET'>, side=<OrderSide.SELL: 'SELL'>, quantity=100.0, limit_price=None, stop_price=None, strategy_id='composite_mean_reversion', signal_ref='cc9b5cb8-a818-4a09-b31b-dc1a15bef44f') — reason: Projected gross exposure 585662.41 (663.6%) exceeds limit 500.0%
 2026-05-29 22:42:17 | WARNING  | aqc.risk.risk_manager               | Risk check FAILED for AAPL: Projected gross exposure 560376.74 (531.0%) exceeds limit 500.0%
 2026-05-29 22:42:17 | WARNING  | aqc.backtester.portfolio            | Order rejected by RiskManager: OrderEvent(event_type=<EventType.ORDER: 3>, event_id='bf41e73b-6d3b-4e95-a4f4-d1f15a1598e1', timestamp=datetime.datetime(2026, 5, 29, 17, 12, 17, 369176), symbol='AAPL', order_type=<OrderType.MARKET: 'MARKET'>, side=<OrderSide.BUY: 'BUY'>, quantity=48.4725, limit_price=None, stop_price=None, strategy_id='composite_mean_reversion', signal_ref='b22bcf82-ba0e-403e-82d3-f62214a0035c') — reason: Projected gross exposure 560376.74 (531.0%) exceeds limit 500.0%
+2026-05-30 13:47:06 | INFO     | aqc                                 | AQC logging initialised — level=INFO, file=logs/backtest.log
+2026-05-30 13:47:06 | INFO     | aqc.diagnostics.trade_analyzer      | Reconstructed 72 round-trip trades from 164 fills
+2026-05-30 13:47:06 | INFO     | aqc.diagnostics.trade_reports       | Trade reports saved to reports\research
+2026-05-30 13:47:08 | INFO     | aqc.diagnostics.trade_visualization | Trade attribution plots saved to reports\research\plots
+2026-05-30 13:47:08 | INFO     | aqc.research.regime_transitions.transition_engine | Identified 158 regime transitions.
+2026-05-30 13:47:58 | INFO     | aqc                                 | AQC logging initialised — level=INFO, file=logs/backtest.log
+2026-05-30 13:47:58 | INFO     | aqc.diagnostics.trade_analyzer      | Reconstructed 68 round-trip trades from 164 fills
+2026-05-30 13:47:58 | INFO     | aqc.diagnostics.trade_reports       | Trade reports saved to reports\research
+2026-05-30 13:48:00 | INFO     | aqc.diagnostics.trade_visualization | Trade attribution plots saved to reports\research\plots
+2026-05-30 13:48:00 | INFO     | aqc.research.regime_transitions.transition_engine | Identified 146 regime transitions.
+2026-05-30 13:48:00 | INFO     | aqc.research.regime_transitions.transition_reports | Transition alpha reports saved to reports\research
+2026-05-30 13:48:01 | INFO     | aqc.research.regime_transitions.transition_visualization | Transition plots saved to reports\research\plots
+2026-05-30 13:48:01 | INFO     | aqc.execution.capacity_analyzer     | Running baseline capacity analysis at $100,000
+2026-05-30 13:48:01 | INFO     | aqc.execution.capacity_analyzer     | Simulating execution at capital level $100,000
+2026-05-30 13:48:01 | INFO     | aqc.execution.capacity_analyzer     | Simulating execution at capital level $1,000,000
+2026-05-30 13:48:01 | INFO     | aqc.execution.capacity_analyzer     | Simulating execution at capital level $10,000,000
+2026-05-30 13:48:01 | INFO     | aqc.execution.capacity_analyzer     | Simulating execution at capital level $50,000,000
+2026-05-30 13:48:01 | INFO     | aqc.execution.capacity_analyzer     | Simulating execution at capital level $100,000,000
+2026-05-30 13:48:01 | INFO     | aqc.execution.capacity_analyzer     | Simulating execution at capital level $500,000,000
+2026-05-30 13:48:01 | INFO     | aqc.execution.capacity_analyzer     | Simulating execution at capital level $1,000,000,000
+2026-05-30 13:48:01 | INFO     | aqc.execution.capacity_reports      | Capacity report saved to reports\research
+2026-05-30 13:48:03 | INFO     | aqc.execution.capacity_reports      | Capacity plots saved to reports\research\plots

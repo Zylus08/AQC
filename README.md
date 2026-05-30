@@ -93,6 +93,18 @@ aqc/
 │   ├── allocation.py             # Multi-asset allocation (4 methods + 7 constraints)
 │   └── portfolio_metrics.py      # VaR, ES/CVaR, HHI, turnover, risk contribution
 │
+├── diagnostics/                    # Portfolio Diagnostics & Validation (NEW)
+│   ├── leverage_analysis.py      # Gross/net leverage, drawdown overlay
+│   ├── exposure_analysis.py      # Long/short/gross/net exposure forensics
+│   ├── risk_budget_analysis.py   # Risk utilisation (actual/target)
+│   ├── position_analysis.py      # Position size, HHI, turnover
+│   ├── regime_analysis.py        # Per-regime Sharpe/CAGR/DD breakdown
+│   ├── forecast_analysis.py      # Vol forecast MAE/RMSE/MAPE per model
+│   ├── attribution.py            # Return decomposition (alpha/leverage/vol/regime)
+│   ├── diagnostics_engine.py     # Composite engine + DrawdownAnalyzer + Validator
+│   ├── diagnostics_report.py     # Console + CSV report generation
+│   └── diagnostics_dashboard.py  # Single-page dark-mode HTML dashboard
+│
 ├── strategies/
 │   ├── base_strategy.py          # Abstract BaseStrategy
 │   ├── sample_strategy.py        # SMACrossover, RSIMeanReversion, EMAMomentum
@@ -124,17 +136,20 @@ configs/
 tests/
 │   ├── test_events.py
 │   ├── test_portfolio.py
-│   ├── test_portfolio_enhanced.py # Portfolio allocator, VaR/ES, comparator (NEW)
+│   ├── test_portfolio_enhanced.py # Portfolio allocator, VaR/ES, comparator
 │   ├── test_risk.py
 │   ├── test_metrics.py
 │   ├── test_integration.py
 │   ├── test_wfo.py               # Walk-forward optimisation tests (38 tests)
-│   └── test_regimes.py           # Regime detection tests (39 tests) (NEW)
+│   ├── test_regimes.py           # Regime detection tests (39 tests)
+│   └── test_diagnostics.py       # Portfolio diagnostics tests (41 tests) (NEW)
 │
 examples/
 │   ├── run_walk_forward.py       # WFO demo with synthetic data
-│   └── run_regime_research.py    # Regime + comparative backtesting demo (NEW)
+│   ├── run_regime_research.py    # Regime + comparative backtesting demo
+│   └── run_diagnostics.py        # Portfolio diagnostics research demo (NEW)
 │
+dashboard/                          # Generated HTML dashboards (NEW)
 docs/                             # Extended documentation
 main.py                           # Entry point
 requirements.txt

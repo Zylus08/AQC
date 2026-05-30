@@ -1,0 +1,80 @@
+,value
+leverage.avg_gross,0.0811
+leverage.max_gross,0.1966
+leverage.avg_net,-0.0087
+leverage.max_net,0.1848
+leverage.min_net,-0.1966
+leverage.pct_leveraged,0.0
+leverage.leverage_utilisation,0.027
+exposure.avg_gross,0.0811
+exposure.max_gross,0.1966
+exposure.avg_net,-0.0087
+exposure.avg_long,0.0362
+exposure.avg_short,0.0449
+exposure.pct_fully_invested,0.0
+exposure.max_long_exposure,0.1848
+exposure.max_short_exposure,0.1966
+risk_budget.avg_utilisation,0.1162
+risk_budget.max_utilisation,0.6235
+risk_budget.pct_over_budget,0.0
+risk_budget.pct_under_50,0.9828
+risk_budget.avg_forecast_vol,0.146167
+risk_budget.avg_realised_vol,0.172218
+position.avg_size,605922.9
+position.max_size,2283961.94
+position.avg_weight,0.1363
+position.max_weight,0.1966
+position.avg_num_positions,0.59
+position.max_num_positions,1
+position.hhi_concentration,0.0114
+position.avg_turnover,0.0117
+regime_vol.n_bars,"{'EXTREME': 154, 'HIGH': 275, 'LOW': 155, 'NORMAL': 365}"
+regime_vol.pct_time,"{'EXTREME': 0.1623, 'HIGH': 0.2898, 'LOW': 0.1633, 'NORMAL': 0.3846}"
+regime_vol.sharpe,"{'EXTREME': 2.5632, 'HIGH': 2.8572, 'LOW': 2.4977, 'NORMAL': 1.6221}"
+regime_vol.sortino,"{'EXTREME': 55.9952, 'HIGH': 142.8669, 'LOW': 159.025, 'NORMAL': 64.4091}"
+regime_vol.cagr,"{'EXTREME': 4.008798, 'HIGH': 5.595824, 'LOW': 3.204987, 'NORMAL': 0.991781}"
+regime_vol.max_drawdown,"{'EXTREME': -0.0138, 'HIGH': -0.014, 'LOW': -0.0144, 'NORMAL': -0.0213}"
+regime_vol.win_rate,"{'EXTREME': 0.2338, 'HIGH': 0.2291, 'LOW': 0.3742, 'NORMAL': 0.3397}"
+regime_vol.avg_return,"{'EXTREME': 0.007264, 'HIGH': 0.008449, 'LOW': 0.006423, 'NORMAL': 0.003128}"
+regime_vol.total_return,"{'EXTREME': 1.676794, 'HIGH': 6.835083, 'LOW': 1.419161, 'NORMAL': 1.712847}"
+regime_vol.contribution,"{'EXTREME': 1.118659, 'HIGH': 2.323528, 'LOW': 0.995545, 'NORMAL': 1.14172}"
+regime_trend.n_bars,"{'DOWNTREND': 348, 'RANGE_BOUND': 229, 'STRONG_DOWNTREND': 18, 'STRONG_UPTREND': 49, 'UPTREND': 305}"
+regime_trend.pct_time,"{'DOWNTREND': 0.3667, 'RANGE_BOUND': 0.2413, 'STRONG_DOWNTREND': 0.019, 'STRONG_UPTREND': 0.0516, 'UPTREND': 0.3214}"
+regime_trend.sharpe,"{'DOWNTREND': 0.8294, 'RANGE_BOUND': 2.0687, 'STRONG_DOWNTREND': nan, 'STRONG_UPTREND': 3.1904, 'UPTREND': 3.4014}"
+regime_trend.sortino,"{'DOWNTREND': 7.8141, 'RANGE_BOUND': 69.0572, 'STRONG_DOWNTREND': nan, 'STRONG_UPTREND': 254.2169, 'UPTREND': 277.9346}"
+regime_trend.cagr,"{'DOWNTREND': 0.15928, 'RANGE_BOUND': 1.712297, 'STRONG_DOWNTREND': 0.0, 'STRONG_UPTREND': 8.023785, 'UPTREND': 15.406379}"
+regime_trend.max_drawdown,"{'DOWNTREND': -0.019, 'RANGE_BOUND': -0.0088, 'STRONG_DOWNTREND': 0.0, 'STRONG_UPTREND': -0.0077, 'UPTREND': -0.0198}"
+regime_trend.win_rate,"{'DOWNTREND': 0.3247, 'RANGE_BOUND': 0.2227, 'STRONG_DOWNTREND': 0.0, 'STRONG_UPTREND': 0.3673, 'UPTREND': 0.3246}"
+regime_trend.avg_return,"{'DOWNTREND': 0.000655, 'RANGE_BOUND': 0.004466, 'STRONG_DOWNTREND': 0.0, 'STRONG_UPTREND': 0.009769, 'UPTREND': 0.012624}"
+regime_trend.total_return,"{'DOWNTREND': 0.226425, 'RANGE_BOUND': 1.476205, 'STRONG_DOWNTREND': 0.0, 'STRONG_UPTREND': 0.533805, 'UPTREND': 28.549567}"
+regime_trend.contribution,"{'DOWNTREND': 0.227855, 'RANGE_BOUND': 1.022741, 'STRONG_DOWNTREND': 0.0, 'STRONG_UPTREND': 0.478677, 'UPTREND': 3.850179}"
+forecast.mae,"{'ewma_vol': 0.068787, 'garch_vol': 0.050167, 'hist_vol': 0.0, 'ensemble_vol': 0.059316}"
+forecast.rmse,"{'ewma_vol': 0.086662, 'garch_vol': 0.066146, 'hist_vol': 0.0, 'ensemble_vol': 0.076336}"
+forecast.mape,"{'ewma_vol': 22.78, 'garch_vol': 15.57, 'hist_vol': 0.0, 'ensemble_vol': 18.99}"
+forecast.bias,"{'ewma_vol': -0.068582, 'garch_vol': -0.049128, 'hist_vol': 0.0, 'ensemble_vol': -0.058855}"
+forecast.correlation,"{'ewma_vol': 0.9939, 'garch_vol': 0.9939, 'hist_vol': 1.0, 'ensemble_vol': 0.9939}"
+forecast.n_obs,"{'ewma_vol': 86, 'garch_vol': 86, 'hist_vol': 929, 'ensemble_vol': 86}"
+attribution.Alpha,3.124705
+attribution.Leverage,0.0
+attribution.Vol Targeting,0.0
+attribution.Regime Filter,0.0
+attribution.Residual,133.516539
+attribution.Total,136.641244
+drawdowns.start,"{0: Timestamp('2021-05-10 00:00:00'), 1: Timestamp('2019-12-05 00:00:00'), 2: Timestamp('2020-09-03 00:00:00'), 3: Timestamp('2021-03-25 00:00:00'), 4: Timestamp('2019-03-12 00:00:00')}"
+drawdowns.trough,"{0: Timestamp('2021-08-18 00:00:00'), 1: Timestamp('2019-12-20 00:00:00'), 2: Timestamp('2021-01-06 00:00:00'), 3: Timestamp('2021-04-15 00:00:00'), 4: Timestamp('2019-04-02 00:00:00')}"
+drawdowns.end,"{0: Timestamp('2021-08-23 00:00:00'), 1: Timestamp('2020-01-20 00:00:00'), 2: Timestamp('2021-01-12 00:00:00'), 3: Timestamp('2021-04-21 00:00:00'), 4: Timestamp('2019-04-17 00:00:00')}"
+drawdowns.depth_pct,"{0: -2.8859, 1: -1.9011, 2: -1.3813, 3: -1.3666, 4: -1.2085}"
+drawdowns.duration_days,"{0: 100, 1: 15, 2: 125, 3: 21, 4: 21}"
+drawdowns.recovery_days,"{0: 5, 1: 31, 2: 6, 3: 6, 4: 15}"
+drawdowns.avg_leverage,"{0: 0.1033, 1: 0.0881, 2: 0.1233, 3: 0.1172, 4: 0.1842}"
+drawdowns.avg_exposure,"{0: 1148548.41, 1: 204958.1148, 2: 710569.2934, 3: 1074695.2319, 4: 161415.1576}"
+drawdowns.vol_regime,"{0: 'HIGH', 1: 'EXTREME', 2: 'NORMAL', 3: 'EXTREME', 4: 'NORMAL'}"
+drawdowns.trend_regime,"{0: 'DOWNTREND', 1: 'DOWNTREND', 2: 'DOWNTREND', 3: 'STRONG_UPTREND', 4: 'STRONG_UPTREND'}"
+drawdowns.avg_forecast_error,"{0: 0.0, 1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0}"
+validation.Leverage,100
+validation.Risk Budget,100
+validation.Exposure,90
+validation.Concentration,100
+validation.Forecasting,100
+validation.Regime,90
+validation.Overall,96
